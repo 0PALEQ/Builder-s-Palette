@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:walnut_wood"
-    }
+    "builders_palette:walnut_wood"
   ],
   "result": {
     "id": "builders_palette:walnut_planks",

@@ -6,12 +6,8 @@
     "ba"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:black_concrete"
-    },
-    "b": {
-      "item": "minecraft:white_concrete"
-    }
+    "a": "minecraft:black_concrete",
+    "b": "minecraft:white_concrete"
   },
   "result": {
     "id": "builders_palette:black_n_white_tiles",

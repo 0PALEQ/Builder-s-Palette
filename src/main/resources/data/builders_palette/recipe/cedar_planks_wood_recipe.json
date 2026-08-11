@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:cedar_wood"
-    }
+    "builders_palette:cedar_wood"
   ],
   "result": {
     "id": "builders_palette:cedar_planks",

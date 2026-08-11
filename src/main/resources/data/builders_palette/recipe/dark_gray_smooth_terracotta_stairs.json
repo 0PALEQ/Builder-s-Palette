@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:dark_gray_smooth_terracotta"
-    }
+    "#": "builders_palette:dark_gray_smooth_terracotta"
   },
   "result": {
     "id": "builders_palette:dark_gray_smooth_terracotta_stairs",

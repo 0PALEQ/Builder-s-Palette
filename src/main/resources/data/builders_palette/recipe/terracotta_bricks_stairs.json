@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:terracotta_bricks"
-    }
+    "#": "builders_palette:terracotta_bricks"
   },
   "result": {
     "id": "builders_palette:terracotta_bricks_stairs",

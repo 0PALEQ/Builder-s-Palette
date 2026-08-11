@@ -1,6 +1,9 @@
 {
   "pack": {
-    "pack_format": 34,
+    "pack_format": 75,
+    "min_format": 75,
+    "max_format": 94,
+    "supported_formats": [75, 81],
     "description": "Builder's Palette resources"
   }
 }

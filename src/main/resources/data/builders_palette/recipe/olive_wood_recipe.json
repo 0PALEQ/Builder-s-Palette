@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:olive_log"
-    }
+    "a": "builders_palette:olive_log"
   },
   "result": {
     "id": "builders_palette:olive_wood",

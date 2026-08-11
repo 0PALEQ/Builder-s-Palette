@@ -6,9 +6,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:grey_planks"
-    }
+    "a": "builders_palette:grey_planks"
   },
   "result": {
     "id": "builders_palette:grey_pressure_plate",

@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_lavender_packed_concrete_bricks"
-    }
+    "#": "builders_palette:pastel_lavender_packed_concrete_bricks"
   },
   "result": {
     "id": "builders_palette:pastel_lavender_packed_concrete_bricks_stairs",

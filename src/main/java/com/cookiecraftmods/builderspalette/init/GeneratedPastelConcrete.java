@@ -75,7 +75,7 @@ public final class GeneratedPastelConcrete {
 		itemsRegistered = true;
 		for (RegistryObject<Block> block : BLOCKS) {
 			RegistryObject.register(Registries.ITEM, block.getId().getPath(),
-					() -> new BlockItem(block.get(), new Item.Settings()));
+					() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Settings())));
 		}
 	}
 
@@ -87,13 +87,13 @@ public final class GeneratedPastelConcrete {
 		RegistryObject<Block> base = pillar
 				? register(name, () -> new PillarBlock(settings()))
 				: register(name, () -> new Block(settings()));
-		register(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(), AbstractBlock.Settings.copy(base.get())));
-		register(name + "_slab", () -> new SlabBlock(AbstractBlock.Settings.copy(base.get())));
-		register(name + "_wall", () -> new WallBlock(AbstractBlock.Settings.copy(base.get())));
+		register(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(), RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+		register(name + "_slab", () -> new SlabBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+		register(name + "_wall", () -> new WallBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
 	}
 
 	private static AbstractBlock.Settings settings() {
-		return AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.8f, 6.0f).requiresTool();
+		return RegistryObject.blockSettings(AbstractBlock.Settings.create()).sounds(BlockSoundGroup.STONE).strength(1.8f, 6.0f).requiresTool();
 	}
 
 	private static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {

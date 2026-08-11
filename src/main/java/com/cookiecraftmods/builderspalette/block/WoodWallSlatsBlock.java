@@ -8,7 +8,7 @@ import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
-import net.minecraft.state.property.DirectionProperty;
+import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.BlockMirror;
 import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.BlockPos;
@@ -19,7 +19,7 @@ import net.minecraft.world.BlockView;
 
 /** Shared behavior and collision shape for the wall-mounted wood slat variants. */
 public class WoodWallSlatsBlock extends Block {
-	public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
 
 	public WoodWallSlatsBlock() {
 		super(BuildersPaletteBlockProperties.of()
@@ -29,16 +29,6 @@ public class WoodWallSlatsBlock extends Block {
 			.nonOpaque()
 			.solidBlock((state, world, pos) -> false));
 		setDefaultState(getDefaultState().with(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public boolean hasSidedTransparency(BlockState state) {
-		return true;
-	}
-
-	@Override
-	public int getOpacity(BlockState state, BlockView world, BlockPos pos) {
-		return 0;
 	}
 
 	@Override

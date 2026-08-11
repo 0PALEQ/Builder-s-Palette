@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:white_pavement"
+  "ingredient": "builders_palette:white_pavement",
+  "result": {
+    "id": "builders_palette:white_pavement_stairs"
   },
-  "result": {"id": "builders_palette:white_pavement_stairs"},
   "count": 1
 }

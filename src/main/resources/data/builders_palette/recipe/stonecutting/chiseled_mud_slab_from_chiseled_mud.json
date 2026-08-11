@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:chiseled_mud"},
-  "result": {"id": "builders_palette:chiseled_mud_slab"},
+  "ingredient": "builders_palette:chiseled_mud",
+  "result": {
+    "id": "builders_palette:chiseled_mud_slab"
+  },
   "count": 2
 }

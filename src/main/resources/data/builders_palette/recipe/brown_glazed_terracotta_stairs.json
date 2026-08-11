@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:brown_glazed_terracotta"
-    }
+    "#": "minecraft:brown_glazed_terracotta"
   },
   "result": {
     "id": "builders_palette:brown_glazed_terracotta_stairs",

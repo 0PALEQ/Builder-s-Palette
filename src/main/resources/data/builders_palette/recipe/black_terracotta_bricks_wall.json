@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:black_terracotta_bricks"
-    }
+    "#": "builders_palette:black_terracotta_bricks"
   },
   "result": {
     "id": "builders_palette:black_terracotta_bricks_wall",

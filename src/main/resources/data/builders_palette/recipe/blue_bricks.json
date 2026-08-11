@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:bricks"
-    },
-    {
-      "item": "minecraft:blue_dye"
-    }
+    "builders_palette:bricks",
+    "minecraft:blue_dye"
   ],
   "result": {
     "id": "builders_palette:blue_bricks",

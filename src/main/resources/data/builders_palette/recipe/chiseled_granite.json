@@ -6,9 +6,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_granite_slab"
-    }
+    "#": "builders_palette:polished_granite_slab"
   },
   "result": {
     "id": "builders_palette:chiseled_granite",

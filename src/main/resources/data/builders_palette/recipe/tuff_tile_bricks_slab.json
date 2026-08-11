@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:tuff_tile_bricks"
-    }
+    "#": "builders_palette:tuff_tile_bricks"
   },
   "result": {
     "id": "builders_palette:tuff_tile_bricks_slab",

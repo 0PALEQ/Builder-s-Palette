@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:black_bricks"
+  "ingredient": "builders_palette:black_bricks",
+  "result": {
+    "id": "builders_palette:black_bricks_slab"
   },
-  "result": {"id": "builders_palette:black_bricks_slab"},
   "count": 2
 }

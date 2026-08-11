@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_granite"},
-  "result": {"id": "builders_palette:polished_granite_stairs"},
+  "ingredient": "builders_palette:polished_granite",
+  "result": {
+    "id": "builders_palette:polished_granite_stairs"
+  },
   "count": 1
 }

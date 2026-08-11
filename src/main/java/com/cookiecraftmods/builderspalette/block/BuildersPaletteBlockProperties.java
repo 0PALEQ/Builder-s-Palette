@@ -1,5 +1,6 @@
 package com.cookiecraftmods.builderspalette.block;
 
+import com.cookiecraftmods.builderspalette.init.RegistryObject;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.MapColor;
 
@@ -8,7 +9,8 @@ public final class BuildersPaletteBlockProperties {
 	}
 
 	public static AbstractBlock.Settings of() {
-		return AbstractBlock.Settings.create().mapColor(colorFor(callingBlockClassName()));
+		return RegistryObject.blockSettings(AbstractBlock.Settings.create())
+				.mapColor(colorFor(callingBlockClassName()));
 	}
 
 	private static String callingBlockClassName() {

@@ -6,9 +6,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:mud"
-    }
+    "#": "minecraft:mud"
   },
   "result": {
     "id": "builders_palette:polished_mud",

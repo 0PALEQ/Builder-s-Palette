@@ -118,7 +118,7 @@ def shaped(pattern: list[str], key: dict, result: str, count: int) -> dict:
         "category": "building",
         "pattern": pattern,
         "key": key,
-        "result": {"item": result, "count": count},
+        "result": {"id": result, "count": count},
         "show_notification": True,
     }
 
@@ -128,7 +128,7 @@ def add_family_resources(outputs: dict[Path, bytes], base_id: str, pillar: bool)
     block_models = ASSETS / "models/block"
     item_models = ASSETS / "models/item"
     item_defs = ASSETS / "items"
-    loot = DATA / f"{NAMESPACE}/loot_tables/blocks"
+    loot = DATA / f"{NAMESPACE}/loot_table/blocks"
 
     if pillar:
         side = f"{NAMESPACE}:block/{base_id}_side"
@@ -187,8 +187,8 @@ def add_family_resources(outputs: dict[Path, bytes], base_id: str, pillar: bool)
 
 
 def add_shape_recipes(outputs: dict[Path, bytes], base_id: str) -> None:
-    recipes = DATA / f"{NAMESPACE}/recipes"
-    ingredient = {"item": f"{NAMESPACE}:{base_id}"}
+    recipes = DATA / f"{NAMESPACE}/recipe"
+    ingredient = f"{NAMESPACE}:{base_id}"
     outputs[recipes / f"{base_id}_stairs.json"] = json_bytes(
         shaped(["#  ", "## ", "###"], {"#": ingredient}, f"{NAMESPACE}:{base_id}_stairs", 4)
     )
@@ -242,7 +242,7 @@ public final class GeneratedPastelConcrete {{
 \t\titemsRegistered = true;
 \t\tfor (RegistryObject<Block> block : BLOCKS) {{
 \t\t\tRegistryObject.register(Registries.ITEM, block.getId().getPath(),
-\t\t\t\t\t() -> new BlockItem(block.get(), new Item.Settings()));
+\t\t\t\t\t() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Settings())));
 \t\t}}
 \t}}
 
@@ -254,13 +254,13 @@ public final class GeneratedPastelConcrete {{
 \t\tRegistryObject<Block> base = pillar
 \t\t\t\t? register(name, () -> new PillarBlock(settings()))
 \t\t\t\t: register(name, () -> new Block(settings()));
-\t\tregister(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(), AbstractBlock.Settings.copy(base.get())));
-\t\tregister(name + "_slab", () -> new SlabBlock(AbstractBlock.Settings.copy(base.get())));
-\t\tregister(name + "_wall", () -> new WallBlock(AbstractBlock.Settings.copy(base.get())));
+\t\tregister(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(), RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+\t\tregister(name + "_slab", () -> new SlabBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+\t\tregister(name + "_wall", () -> new WallBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
 \t}}
 
 \tprivate static AbstractBlock.Settings settings() {{
-\t\treturn AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.8f, 6.0f).requiresTool();
+\t\treturn RegistryObject.blockSettings(AbstractBlock.Settings.create()).sounds(BlockSoundGroup.STONE).strength(1.8f, 6.0f).requiresTool();
 \t}}
 
 \tprivate static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {{
@@ -300,8 +300,21 @@ def update_shared_json(outputs: dict[Path, bytes], state: dict, lang_entries: di
         outputs[path] = json_bytes(data)
 
 
+def migrate_state_paths(state: dict) -> dict:
+    def current(path: str) -> str:
+        return (path
+                .replace("/loot_tables/", "/loot_table/")
+                .replace("/recipes/", "/recipe/")
+                .replace("/tags/blocks/", "/tags/block/")
+                .replace("/tags/items/", "/tags/item/"))
+
+    state["owned_files"] = [current(path) for path in state.get("owned_files", [])]
+    state["tag_values"] = {current(path): values for path, values in state.get("tag_values", {}).items()}
+    return state
+
+
 def build_plan() -> tuple[dict[Path, bytes], set[Path], dict]:
-    state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
+    state = migrate_state_paths(json.loads(STATE.read_text(encoding="utf-8"))) if STATE.exists() else {}
     outputs: dict[Path, bytes] = {}
     owned: set[Path] = {JAVA}
     families: list[tuple[str, bool]] = []
@@ -335,20 +348,20 @@ def build_plan() -> tuple[dict[Path, bytes], set[Path], dict]:
         outputs.update(texture_outputs)
         owned.update(texture_outputs)
 
-        recipes = DATA / f"{NAMESPACE}/recipes"
+        recipes = DATA / f"{NAMESPACE}/recipe"
         outputs[recipes / f"{smooth}.json"] = json_bytes(shaped(
             ["###", "#D#", "###"],
-            {"#": {"item": "minecraft:white_concrete"}, "D": {"item": f"minecraft:{dye}"}},
+            {"#": "minecraft:white_concrete", "D": f"minecraft:{dye}"},
             f"{NAMESPACE}:{smooth}", 8,
         ))
         outputs[recipes / f"{bricks}.json"] = json_bytes(shaped(
-            ["##", "##"], {"#": {"item": f"{NAMESPACE}:{smooth}"}}, f"{NAMESPACE}:{bricks}", 4,
+            ["##", "##"], {"#": f"{NAMESPACE}:{smooth}"}, f"{NAMESPACE}:{bricks}", 4,
         ))
         outputs[recipes / f"{packed}.json"] = json_bytes(shaped(
-            ["##", "##"], {"#": {"item": f"{NAMESPACE}:{bricks}"}}, f"{NAMESPACE}:{packed}", 4,
+            ["##", "##"], {"#": f"{NAMESPACE}:{bricks}"}, f"{NAMESPACE}:{packed}", 4,
         ))
         outputs[recipes / f"{pillar}.json"] = json_bytes(shaped(
-            ["#", "#"], {"#": {"item": f"{NAMESPACE}:{smooth}"}}, f"{NAMESPACE}:{pillar}", 2,
+            ["#", "#"], {"#": f"{NAMESPACE}:{smooth}"}, f"{NAMESPACE}:{pillar}", 2,
         ))
         owned.update((recipes / f"{base}.json" for base in (smooth, bricks, packed, pillar)))
 
@@ -360,12 +373,12 @@ def build_plan() -> tuple[dict[Path, bytes], set[Path], dict]:
             owned.update(set(outputs) - before)
             for block_id, suffix in zip(block_ids(base_id), ("", " Stairs", " Slab", " Wall")):
                 lang[f"block.{NAMESPACE}.{block_id}"] = display_name + suffix
-                tag("src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json", block_id)
-            tag("src/main/resources/data/minecraft/tags/blocks/stairs.json", f"{base_id}_stairs")
-            tag("src/main/resources/data/minecraft/tags/items/stairs.json", f"{base_id}_stairs")
-            tag("src/main/resources/data/minecraft/tags/blocks/slabs.json", f"{base_id}_slab")
-            tag("src/main/resources/data/minecraft/tags/items/slabs.json", f"{base_id}_slab")
-            tag("src/main/resources/data/minecraft/tags/blocks/walls.json", f"{base_id}_wall")
+                tag("src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json", block_id)
+            tag("src/main/resources/data/minecraft/tags/block/stairs.json", f"{base_id}_stairs")
+            tag("src/main/resources/data/minecraft/tags/item/stairs.json", f"{base_id}_stairs")
+            tag("src/main/resources/data/minecraft/tags/block/slabs.json", f"{base_id}_slab")
+            tag("src/main/resources/data/minecraft/tags/item/slabs.json", f"{base_id}_slab")
+            tag("src/main/resources/data/minecraft/tags/block/walls.json", f"{base_id}_wall")
 
     outputs[JAVA] = generated_java(families)
     update_shared_json(outputs, state, lang, tags)

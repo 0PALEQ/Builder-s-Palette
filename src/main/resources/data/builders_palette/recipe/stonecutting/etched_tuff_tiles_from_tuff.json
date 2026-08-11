@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "minecraft:tuff"},
-  "result": {"id": "builders_palette:etched_tuff_tiles"},
+  "ingredient": "minecraft:tuff",
+  "result": {
+    "id": "builders_palette:etched_tuff_tiles"
+  },
   "count": 1
 }

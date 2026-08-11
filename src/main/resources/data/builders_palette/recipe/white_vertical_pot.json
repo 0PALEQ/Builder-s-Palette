@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:flower_pot"
-    },
-    {
-      "item": "minecraft:white_dye"
-    }
+    "minecraft:flower_pot",
+    "minecraft:white_dye"
   ],
   "result": {
     "id": "builders_palette:white_vertical_pot",

@@ -50,7 +50,7 @@ public final class GeneratedBlockFamilies {
 
 		for (RegistryObject<Block> block : BLOCKS) {
 			RegistryObject.register(Registries.ITEM, block.getId().getPath(),
-					() -> new BlockItem(block.get(), new Item.Settings()));
+					() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Settings())));
 		}
 	}
 
@@ -67,13 +67,15 @@ public final class GeneratedBlockFamilies {
 
 		if (stairs) {
 			register(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(),
-					AbstractBlock.Settings.copy(base.get())));
+					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
 		}
 		if (slab) {
-			register(name + "_slab", () -> new SlabBlock(AbstractBlock.Settings.copy(base.get())));
+			register(name + "_slab", () -> new SlabBlock(
+					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
 		}
 		if (wall) {
-			register(name + "_wall", () -> new WallBlock(AbstractBlock.Settings.copy(base.get())));
+			register(name + "_wall", () -> new WallBlock(
+					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
 		}
 	}
 
@@ -82,7 +84,7 @@ public final class GeneratedBlockFamilies {
 		AbstractBlock.Settings settings = AbstractBlock.Settings.create()
 				.sounds(sound)
 				.strength(hardness, resistance);
-		return requiresTool ? settings.requiresTool() : settings;
+		return RegistryObject.blockSettings(requiresTool ? settings.requiresTool() : settings);
 	}
 
 	private static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {

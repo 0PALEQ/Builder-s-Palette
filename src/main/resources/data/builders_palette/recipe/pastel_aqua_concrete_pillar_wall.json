@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_aqua_concrete_pillar"
-    }
+    "#": "builders_palette:pastel_aqua_concrete_pillar"
   },
   "result": {
     "id": "builders_palette:pastel_aqua_concrete_pillar_wall",

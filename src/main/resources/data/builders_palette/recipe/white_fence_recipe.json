@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:white_planks"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "builders_palette:white_planks",
+    "b": "minecraft:stick"
   },
   "result": {
     "id": "builders_palette:white_fence",

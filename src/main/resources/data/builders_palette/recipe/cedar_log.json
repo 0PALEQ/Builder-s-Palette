@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:spruce_log"
-    },
-    {
-      "item": "minecraft:cyan_dye"
-    }
+    "minecraft:spruce_log",
+    "minecraft:cyan_dye"
   ],
   "result": {
     "id": "builders_palette:cedar_log",
@@ -16,4 +12,3 @@
   "show_notification": true,
   "group": "builders_palette_logs"
 }
-

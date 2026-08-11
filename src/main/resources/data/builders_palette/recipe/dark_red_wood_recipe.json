@@ -7,9 +7,7 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:dark_red_log"
-    }
+    "a": "builders_palette:dark_red_log"
   },
   "result": {
     "id": "builders_palette:dark_red_wood",

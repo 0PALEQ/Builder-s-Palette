@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:chiseled_sandstone"
-    }
+    "#": "minecraft:chiseled_sandstone"
   },
   "result": {
     "id": "builders_palette:chiseled_sandstone_wall",

@@ -7,9 +7,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:purpleheart_planks"
-    }
+    "a": "builders_palette:purpleheart_planks"
   },
   "result": {
     "id": "minecraft:stick",

@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:glazed_sandstone"
-    }
+    "#": "builders_palette:glazed_sandstone"
   },
   "result": {
     "id": "builders_palette:glazed_sandstone_stairs",

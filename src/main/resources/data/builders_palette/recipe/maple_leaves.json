@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:birch_leaves"
-    },
-    {
-      "item": "minecraft:yellow_dye"
-    }
+    "minecraft:birch_leaves",
+    "minecraft:yellow_dye"
   ],
   "result": {
     "id": "builders_palette:maple_leaves",
@@ -16,4 +12,3 @@
   "show_notification": true,
   "group": "builders_palette_leaves"
 }
-

@@ -5,12 +5,8 @@
     "ab"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:brick"
-    },
-    "b": {
-      "item": "minecraft:black_dye"
-    }
+    "a": "minecraft:brick",
+    "b": "minecraft:black_dye"
   },
   "result": {
     "id": "builders_palette:black_brick",

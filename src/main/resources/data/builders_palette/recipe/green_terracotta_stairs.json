@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:green_terracotta"
-    }
+    "#": "minecraft:green_terracotta"
   },
   "result": {
     "id": "builders_palette:green_terracotta_stairs",

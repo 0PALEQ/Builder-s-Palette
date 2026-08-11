@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:white_log"
-    }
+    "#": "builders_palette:white_log"
   },
   "result": {
     "id": "builders_palette:white_log_wall_slats",

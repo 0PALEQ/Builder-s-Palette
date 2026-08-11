@@ -17,6 +17,7 @@ import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.StairsBlock;
+import net.minecraft.block.TintedParticleLeavesBlock;
 import net.minecraft.block.WallBlock;
 import net.minecraft.block.WoodType;
 
@@ -1077,63 +1078,68 @@ public class BuildersPaletteModBlocks {
 	public static final RegistryObject<Block> END_STONE_PILLAR = pillar("end_stone_pillar", Blocks.END_STONE);
 
 	private static RegistryObject<Block> simpleBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new Block(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> woodBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new Block(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodPillar(String name, Block baseBlock) {
-		return register(name, () -> new PillarBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new PillarBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodLeaves(String name, Block baseBlock) {
-		return register(name, () -> new LeavesBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new TintedParticleLeavesBlock(0.01f,
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodFence(String name, Block baseBlock) {
-		return register(name, () -> new FenceBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new FenceBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodFenceGate(String name, Block baseBlock) {
-		return register(name, () -> new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new FenceGateBlock(WoodType.OAK,
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodPressurePlate(String name, Block baseBlock) {
 		return register(name, () -> new PressurePlateBlock(BlockSetType.OAK,
-				AbstractBlock.Settings.copy(baseBlock).burnable()));
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> woodButton(String name, Block baseBlock) {
-		return register(name, () -> new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new ButtonBlock(BlockSetType.OAK, 30,
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock).burnable())));
 	}
 
 	private static RegistryObject<Block> pillar(String name, Block baseBlock) {
-		return register(name, () -> new PillarBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new PillarBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> stairs(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new StairsBlock(baseBlock.get().getDefaultState(), AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new StairsBlock(baseBlock.get().getDefaultState(),
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> stairs(String name, Block baseBlock) {
-		return register(name, () -> new StairsBlock(baseBlock.getDefaultState(), AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new StairsBlock(baseBlock.getDefaultState(),
+				RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> slab(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new SlabBlock(AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new SlabBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> slab(String name, Block baseBlock) {
-		return register(name, () -> new SlabBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new SlabBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> wall(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new WallBlock(AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new WallBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> wall(String name, Block baseBlock) {
-		return register(name, () -> new WallBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new WallBlock(RegistryObject.blockSettings(AbstractBlock.Settings.copy(baseBlock))));
 	}
 }

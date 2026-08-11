@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:yellow_terracotta"
+  "ingredient": "minecraft:yellow_terracotta",
+  "result": {
+    "id": "builders_palette:polished_yellow_terracotta"
   },
-  "result": {"id": "builders_palette:polished_yellow_terracotta"},
   "count": 1
 }

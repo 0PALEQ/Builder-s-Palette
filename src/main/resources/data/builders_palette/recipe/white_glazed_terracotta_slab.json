@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:white_glazed_terracotta"
-    }
+    "#": "minecraft:white_glazed_terracotta"
   },
   "result": {
     "id": "builders_palette:white_glazed_terracotta_slab",

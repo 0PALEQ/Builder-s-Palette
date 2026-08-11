@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:asphalt_block"
-    },
-    {
-      "item": "minecraft:white_dye"
-    },
-    {
-      "item": "minecraft:white_concrete"
-    }
+    "builders_palette:asphalt_block",
+    "minecraft:white_dye",
+    "minecraft:white_concrete"
   ],
   "result": {
     "id": "builders_palette:zebraasphalt",

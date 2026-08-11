@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:gray_smooth_terracotta"
-    },
-    {
-      "item": "minecraft:black_dye"
-    }
+    "builders_palette:gray_smooth_terracotta",
+    "minecraft:black_dye"
   ],
   "result": {
     "id": "builders_palette:dark_gray_smooth_terracotta",

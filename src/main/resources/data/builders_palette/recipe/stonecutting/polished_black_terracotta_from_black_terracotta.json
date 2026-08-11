@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:black_terracotta"
+  "ingredient": "minecraft:black_terracotta",
+  "result": {
+    "id": "builders_palette:polished_black_terracotta"
   },
-  "result": {"id": "builders_palette:polished_black_terracotta"},
   "count": 1
 }

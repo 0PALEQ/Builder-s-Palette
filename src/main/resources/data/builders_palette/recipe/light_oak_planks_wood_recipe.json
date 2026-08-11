@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:light_oak_wood"
-    }
+    "builders_palette:light_oak_wood"
   ],
   "result": {
     "id": "builders_palette:light_oak_planks",

@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:bricks"
-    }
+    "#": "builders_palette:bricks"
   },
   "result": {
     "id": "builders_palette:bricks_slab",

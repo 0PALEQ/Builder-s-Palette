@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:asphalt_block"
-    },
-    {
-      "item": "minecraft:white_dye"
-    }
+    "builders_palette:asphalt_block",
+    "minecraft:white_dye"
   ],
   "result": {
     "id": "builders_palette:dashed_line_asphalt",

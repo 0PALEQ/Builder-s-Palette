@@ -297,7 +297,8 @@ def family_outputs(root: Path, family: Family) -> dict[Path, bytes]:
     blockstates = assets / "blockstates"
     block_models = assets / "models/block"
     item_models = assets / "models/item"
-    loot = data / "loot_tables/blocks"
+    item_defs = assets / "items"
+    loot = data / "loot_table/blocks"
     block_id = family.block_id
 
     if "all" in family.textures:
@@ -325,6 +326,9 @@ def family_outputs(root: Path, family: Family) -> dict[Path, bytes]:
     add_json_output(outputs, item_models / f"{block_id}.json", {
         "parent": f"{NAMESPACE}:block/{block_id}"
     })
+    add_json_output(outputs, item_defs / f"{block_id}.json", {
+        "model": {"type": "minecraft:model", "model": f"{NAMESPACE}:item/{block_id}"}
+    })
     add_json_output(outputs, loot / f"{block_id}.json", self_drop(block_id))
 
     shape_textures = {
@@ -339,6 +343,9 @@ def family_outputs(root: Path, family: Family) -> dict[Path, bytes]:
         for suffix, parent in (("", "block/stairs"), ("_inner", "block/inner_stairs"), ("_outer", "block/outer_stairs")):
             add_json_output(outputs, block_models / f"{shape_id}{suffix}.json", model(parent, shape_textures, family.render_type))
         add_json_output(outputs, item_models / f"{shape_id}.json", {"parent": f"{NAMESPACE}:block/{shape_id}"})
+        add_json_output(outputs, item_defs / f"{shape_id}.json", {
+            "model": {"type": "minecraft:model", "model": f"{NAMESPACE}:item/{shape_id}"}
+        })
         add_json_output(outputs, loot / f"{shape_id}.json", self_drop(shape_id))
 
     if "slab" in family.variants:
@@ -347,6 +354,9 @@ def family_outputs(root: Path, family: Family) -> dict[Path, bytes]:
         for suffix, parent in (("", "block/slab"), ("_top", "block/slab_top"), ("_full", "block/cube_bottom_top")):
             add_json_output(outputs, block_models / f"{shape_id}{suffix}.json", model(parent, shape_textures, family.render_type))
         add_json_output(outputs, item_models / f"{shape_id}.json", {"parent": f"{NAMESPACE}:block/{shape_id}"})
+        add_json_output(outputs, item_defs / f"{shape_id}.json", {
+            "model": {"type": "minecraft:model", "model": f"{NAMESPACE}:item/{shape_id}"}
+        })
         add_json_output(outputs, loot / f"{shape_id}.json", self_drop(shape_id))
 
     if "wall" in family.variants:
@@ -362,6 +372,9 @@ def family_outputs(root: Path, family: Family) -> dict[Path, bytes]:
             add_json_output(outputs, block_models / f"{shape_id}{suffix}.json", model(parent, wall_textures, family.render_type))
         add_json_output(outputs, item_models / f"{shape_id}.json", {
             "parent": f"{NAMESPACE}:block/{shape_id}_inventory"
+        })
+        add_json_output(outputs, item_defs / f"{shape_id}.json", {
+            "model": {"type": "minecraft:model", "model": f"{NAMESPACE}:item/{shape_id}"}
         })
         add_json_output(outputs, loot / f"{shape_id}.json", self_drop(shape_id))
 
@@ -406,12 +419,12 @@ def tag_additions(families: Iterable[Family]) -> dict[Path, list[str]]:
     for family in families:
         if family.tool != "none":
             for block_id in family.block_ids:
-                add(f"src/main/resources/data/minecraft/tags/blocks/mineable/{family.tool}.json", block_id)
+                add(f"src/main/resources/data/minecraft/tags/block/mineable/{family.tool}.json", block_id)
         for variant, plural in (("stairs", "stairs"), ("slab", "slabs"), ("wall", "walls")):
             if variant in family.variants:
                 block_id = f"{family.block_id}_{variant}"
-                add(f"src/main/resources/data/minecraft/tags/blocks/{plural}.json", block_id)
-                add(f"src/main/resources/data/minecraft/tags/items/{plural}.json", block_id)
+                add(f"src/main/resources/data/minecraft/tags/block/{plural}.json", block_id)
+                add(f"src/main/resources/data/minecraft/tags/item/{plural}.json", block_id)
     return result
 
 

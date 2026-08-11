@@ -8,9 +8,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:walnut_planks"
-    }
+    "a": "builders_palette:walnut_planks"
   },
   "result": {
     "id": "builders_palette:walnut_stairs",

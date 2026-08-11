@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:tuff"
+  "ingredient": "minecraft:tuff",
+  "result": {
+    "id": "builders_palette:tuff_slab"
   },
-  "result": {"id": "builders_palette:tuff_slab"},
   "count": 2
 }

@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:asphalt_block"
-    },
-    {
-      "item": "minecraft:yellow_dye"
-    },
-    {
-      "item": "minecraft:white_dye"
-    }
+    "builders_palette:asphalt_block",
+    "minecraft:yellow_dye",
+    "minecraft:white_dye"
   ],
   "result": {
     "id": "builders_palette:yield_asphalt",

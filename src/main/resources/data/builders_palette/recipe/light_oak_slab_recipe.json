@@ -6,9 +6,7 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:light_oak_planks"
-    }
+    "a": "builders_palette:light_oak_planks"
   },
   "result": {
     "id": "builders_palette:light_oak_slab",

@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:cracked_bricks"
-    }
+    "#": "builders_palette:cracked_bricks"
   },
   "result": {
     "id": "builders_palette:cracked_bricks_stairs",

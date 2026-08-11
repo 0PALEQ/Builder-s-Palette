@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:green_smooth_terracotta"
+  "ingredient": "builders_palette:green_smooth_terracotta",
+  "result": {
+    "id": "builders_palette:green_smooth_terracotta_stairs"
   },
-  "result": {"id": "builders_palette:green_smooth_terracotta_stairs"},
   "count": 1
 }

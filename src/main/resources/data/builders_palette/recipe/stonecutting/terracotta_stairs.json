@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:terracotta"
+  "ingredient": "minecraft:terracotta",
+  "result": {
+    "id": "builders_palette:terracotta_stairs"
   },
-  "result": {"id": "builders_palette:terracotta_stairs"},
   "count": 1
 }

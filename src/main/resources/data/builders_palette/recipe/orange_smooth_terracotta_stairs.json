@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:orange_smooth_terracotta"
-    }
+    "#": "builders_palette:orange_smooth_terracotta"
   },
   "result": {
     "id": "builders_palette:orange_smooth_terracotta_stairs",

@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:light_gray_bricks"
-    }
+    "#": "builders_palette:light_gray_bricks"
   },
   "result": {
     "id": "builders_palette:light_gray_bricks_slab",

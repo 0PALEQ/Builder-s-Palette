@@ -1,8 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:polished_cyan_terracotta"
+  "ingredient": "builders_palette:polished_cyan_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_cyan_terracotta"
   },
-  "result": {"id": "builders_palette:chiseled_cyan_terracotta"},
   "count": 1
 }

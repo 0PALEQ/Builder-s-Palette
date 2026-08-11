@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:black_tiles"
-    }
+    "#": "builders_palette:black_tiles"
   },
   "result": {
     "id": "builders_palette:black_tiles_stairs",

@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:woven_tuff_tiles"
-    }
+    "#": "builders_palette:woven_tuff_tiles"
   },
   "result": {
     "id": "builders_palette:woven_tuff_tiles_wall",

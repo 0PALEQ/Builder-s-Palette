@@ -7,9 +7,7 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:white_planks"
-    }
+    "a": "builders_palette:white_planks"
   },
   "result": {
     "id": "minecraft:stick",

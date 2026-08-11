@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:dark_grey_bricks"
-    }
+    "#": "builders_palette:dark_grey_bricks"
   },
   "result": {
     "id": "builders_palette:dark_grey_bricks_wall",

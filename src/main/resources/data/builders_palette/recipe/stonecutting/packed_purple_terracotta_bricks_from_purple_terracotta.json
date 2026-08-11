@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "minecraft:purple_terracotta"},
-  "result": {"id": "builders_palette:packed_purple_terracotta_bricks"},
+  "ingredient": "minecraft:purple_terracotta",
+  "result": {
+    "id": "builders_palette:packed_purple_terracotta_bricks"
+  },
   "count": 1
 }

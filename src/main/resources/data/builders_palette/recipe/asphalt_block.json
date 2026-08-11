@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:black_concrete_powder"
-    },
-    {
-      "item": "minecraft:gravel"
-    },
-    {
-      "item": "minecraft:coal"
-    }
+    "minecraft:black_concrete_powder",
+    "minecraft:gravel",
+    "minecraft:coal"
   ],
   "result": {
     "id": "builders_palette:asphalt_block",

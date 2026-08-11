@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:asphalt_block"
-    }
+    "#": "builders_palette:asphalt_block"
   },
   "result": {
     "id": "builders_palette:asphalt_slab",

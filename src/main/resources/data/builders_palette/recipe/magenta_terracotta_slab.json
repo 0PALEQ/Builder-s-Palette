@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:magenta_terracotta"
-    }
+    "#": "minecraft:magenta_terracotta"
   },
   "result": {
     "id": "builders_palette:magenta_terracotta_slab",

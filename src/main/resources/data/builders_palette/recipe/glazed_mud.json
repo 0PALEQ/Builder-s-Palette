@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smelting",
   "category": "building",
-  "ingredient": {
-    "item": "minecraft:mud"
+  "ingredient": "minecraft:mud",
+  "result": {
+    "id": "builders_palette:glazed_mud"
   },
-  "result": {"id": "builders_palette:glazed_mud"},
   "experience": 0.1,
   "cookingtime": 200
 }

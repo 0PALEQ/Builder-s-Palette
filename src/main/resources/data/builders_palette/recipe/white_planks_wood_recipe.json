@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:white_wood"
-    }
+    "builders_palette:white_wood"
   ],
   "result": {
     "id": "builders_palette:white_planks",

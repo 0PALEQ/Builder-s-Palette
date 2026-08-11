@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/coffe_wood_wall_slats"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/coffe_wood_wall_slats"
+  }
 }

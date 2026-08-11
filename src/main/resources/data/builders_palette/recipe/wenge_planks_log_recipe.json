@@ -3,9 +3,7 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:wenge_log"
-    }
+    "builders_palette:wenge_log"
   ],
   "result": {
     "id": "builders_palette:wenge_planks",

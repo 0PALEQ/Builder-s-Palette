@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:dark_oak_log"
-    },
-    {
-      "item": "minecraft:brown_dye"
-    },
-    {
-      "item": "minecraft:black_dye"
-    }
+    "minecraft:dark_oak_log",
+    "minecraft:brown_dye",
+    "minecraft:black_dye"
   ],
   "result": {
     "id": "builders_palette:wenge_log",

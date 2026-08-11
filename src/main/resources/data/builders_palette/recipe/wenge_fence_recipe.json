@@ -7,12 +7,8 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:wenge_planks"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "builders_palette:wenge_planks",
+    "b": "minecraft:stick"
   },
   "result": {
     "id": "builders_palette:wenge_fence",

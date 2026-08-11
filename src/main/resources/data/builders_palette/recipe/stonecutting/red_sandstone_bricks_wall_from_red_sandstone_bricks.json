@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:red_sandstone_bricks"},
-  "result": {"id": "builders_palette:red_sandstone_bricks_wall"},
+  "ingredient": "builders_palette:red_sandstone_bricks",
+  "result": {
+    "id": "builders_palette:red_sandstone_bricks_wall"
+  },
   "count": 1
 }

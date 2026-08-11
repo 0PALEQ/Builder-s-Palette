@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smelting",
   "category": "building",
-  "ingredient": {
-    "item": "minecraft:white_terracotta"
+  "ingredient": "minecraft:white_terracotta",
+  "result": {
+    "id": "builders_palette:white_smooth_terracotta"
   },
-  "result": {"id": "builders_palette:white_smooth_terracotta"},
   "experience": 0.1,
   "cookingtime": 200
 }

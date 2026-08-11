@@ -7,12 +7,8 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:black_brick"
-    },
-    "b": {
-      "item": "minecraft:white_concrete_powder"
-    }
+    "a": "builders_palette:black_brick",
+    "b": "minecraft:white_concrete_powder"
   },
   "result": {
     "id": "builders_palette:black_3d_bricks",

@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_tuff"},
-  "result": {"id": "builders_palette:polished_tuff_stairs"},
+  "ingredient": "builders_palette:polished_tuff",
+  "result": {
+    "id": "builders_palette:polished_tuff_stairs"
+  },
   "count": 1
 }

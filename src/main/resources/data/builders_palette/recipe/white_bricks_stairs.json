@@ -7,9 +7,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:white_bricks"
-    }
+    "#": "builders_palette:white_bricks"
   },
   "result": {
     "id": "builders_palette:white_bricks_stairs",

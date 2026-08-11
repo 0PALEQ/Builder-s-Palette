@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_sage_concrete_pillar"
-    }
+    "#": "builders_palette:pastel_sage_concrete_pillar"
   },
   "result": {
     "id": "builders_palette:pastel_sage_concrete_pillar_slab",

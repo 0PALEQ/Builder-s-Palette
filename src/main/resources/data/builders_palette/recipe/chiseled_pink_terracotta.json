@@ -6,9 +6,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_pink_terracotta_slab"
-    }
+    "#": "builders_palette:polished_pink_terracotta_slab"
   },
   "result": {
     "id": "builders_palette:chiseled_pink_terracotta",

@@ -6,9 +6,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:glazed_diorite"
-    }
+    "#": "builders_palette:glazed_diorite"
   },
   "result": {
     "id": "builders_palette:glazed_diorite_wall",

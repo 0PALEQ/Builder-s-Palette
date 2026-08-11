@@ -2,15 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:bricks"
-    },
-    {
-      "item": "minecraft:black_dye"
-    },
-    {
-      "item": "minecraft:gray_dye"
-    }
+    "builders_palette:bricks",
+    "minecraft:black_dye",
+    "minecraft:gray_dye"
   ],
   "result": {
     "id": "builders_palette:dark_grey_bricks",

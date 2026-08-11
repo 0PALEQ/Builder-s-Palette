@@ -3,9 +3,7 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "builders_palette:purpleheart_planks"
-    }
+    "builders_palette:purpleheart_planks"
   ],
   "result": {
     "id": "builders_palette:purpleheart_button",

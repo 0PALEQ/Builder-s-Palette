@@ -2,12 +2,8 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:birch_log"
-    },
-    {
-      "item": "minecraft:yellow_dye"
-    }
+    "minecraft:birch_log",
+    "minecraft:yellow_dye"
   ],
   "result": {
     "id": "builders_palette:maple_log",
@@ -16,4 +12,3 @@
   "show_notification": true,
   "group": "builders_palette_logs"
 }
-

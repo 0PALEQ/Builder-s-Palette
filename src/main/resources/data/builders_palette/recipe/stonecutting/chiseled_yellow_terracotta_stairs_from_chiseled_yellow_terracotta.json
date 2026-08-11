@@ -1,6 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:chiseled_yellow_terracotta"},
-  "result": {"id": "builders_palette:chiseled_yellow_terracotta_stairs"},
+  "ingredient": "builders_palette:chiseled_yellow_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_yellow_terracotta_stairs"
+  },
   "count": 1
 }
