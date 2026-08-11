@@ -6,11 +6,10 @@
     "aaa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:maple_planks"
-    }
+    "a": "builders_palette:maple_planks"
   },
-  "result": {"id": "builders_palette:maple_slab",
+  "result": {
+    "id": "builders_palette:maple_slab",
     "count": 6
   }
 }

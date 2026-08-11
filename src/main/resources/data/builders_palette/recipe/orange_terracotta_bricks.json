@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:orange_terracotta"
-    }
+    "#": "minecraft:orange_terracotta"
   },
-  "result": {"id": "builders_palette:orange_terracotta_bricks",
+  "result": {
+    "id": "builders_palette:orange_terracotta_bricks",
     "count": 4
   },
   "show_notification": true

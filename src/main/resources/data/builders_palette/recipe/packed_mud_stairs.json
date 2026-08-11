@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:packed_mud"
-    }
+    "#": "minecraft:packed_mud"
   },
-  "result": {"id": "builders_palette:packed_mud_stairs",
+  "result": {
+    "id": "builders_palette:packed_mud_stairs",
     "count": 4
   },
   "show_notification": true

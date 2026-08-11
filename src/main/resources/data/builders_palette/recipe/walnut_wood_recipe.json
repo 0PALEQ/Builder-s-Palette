@@ -7,11 +7,10 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:walnut_log"
-    }
+    "a": "builders_palette:walnut_log"
   },
-  "result": {"id": "builders_palette:walnut_wood",
+  "result": {
+    "id": "builders_palette:walnut_wood",
     "count": 3
   }
 }

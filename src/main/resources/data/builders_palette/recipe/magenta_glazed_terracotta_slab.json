@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:magenta_glazed_terracotta"
-    }
+    "#": "minecraft:magenta_glazed_terracotta"
   },
-  "result": {"id": "builders_palette:magenta_glazed_terracotta_slab",
+  "result": {
+    "id": "builders_palette:magenta_glazed_terracotta_slab",
     "count": 6
   },
   "show_notification": true

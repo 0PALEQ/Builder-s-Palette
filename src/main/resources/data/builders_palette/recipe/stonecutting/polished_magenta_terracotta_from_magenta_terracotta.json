@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:magenta_terracotta"
-  },
-  "result": {"id": "builders_palette:polished_magenta_terracotta", "count": 1}
+  "ingredient": "minecraft:magenta_terracotta",
+  "result": {
+    "id": "builders_palette:polished_magenta_terracotta",
+    "count": 1
+  }
 }

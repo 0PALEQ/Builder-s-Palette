@@ -1,7 +1,14 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "pattern": ["###"],
-  "key": {"#": {"item": "builders_palette:packed_red_sandstone_bricks"}},
-  "result": {"id": "builders_palette:packed_red_sandstone_bricks_slab", "count": 6}
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:packed_red_sandstone_bricks"
+  },
+  "result": {
+    "id": "builders_palette:packed_red_sandstone_bricks_slab",
+    "count": 6
+  }
 }

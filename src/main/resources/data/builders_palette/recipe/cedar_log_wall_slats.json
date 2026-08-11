@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:cedar_log"
-    }
+    "#": "builders_palette:cedar_log"
   },
-  "result": {"id": "builders_palette:cedar_log_wall_slats",
+  "result": {
+    "id": "builders_palette:cedar_log_wall_slats",
     "count": 6
   },
   "show_notification": true

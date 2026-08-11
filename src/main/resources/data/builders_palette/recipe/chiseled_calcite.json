@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_calcite_slab"
-    }
+    "#": "builders_palette:polished_calcite_slab"
   },
-  "result": {"id": "builders_palette:chiseled_calcite",
+  "result": {
+    "id": "builders_palette:chiseled_calcite",
     "count": 1
   },
   "show_notification": true

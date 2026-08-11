@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_black_terracotta_slab"
-    }
+    "#": "builders_palette:polished_black_terracotta_slab"
   },
-  "result": {"id": "builders_palette:chiseled_black_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_black_terracotta",
     "count": 1
   },
   "show_notification": true

@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:dark_grey_bricks"
-  },
-  "result": {"id": "builders_palette:dark_grey_bricks_stairs", "count": 1}
+  "ingredient": "builders_palette:dark_grey_bricks",
+  "result": {
+    "id": "builders_palette:dark_grey_bricks_stairs",
+    "count": 1
+  }
 }

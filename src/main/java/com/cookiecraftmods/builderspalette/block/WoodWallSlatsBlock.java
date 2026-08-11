@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.StateDefinition;
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.core.BlockPos;
@@ -19,7 +19,7 @@ import net.minecraft.world.level.BlockGetter;
 
 /** Shared behavior and collision shape for the wall-mounted wood slat variants. */
 public class WoodWallSlatsBlock extends Block {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public WoodWallSlatsBlock() {
 		super(BuildersPaletteBlockProperties.of()
@@ -29,11 +29,6 @@ public class WoodWallSlatsBlock extends Block {
 			.noOcclusion()
 			.isRedstoneConductor((state, world, pos) -> false));
 		registerDefaultState(defaultBlockState().setValue(FACING, Direction.NORTH));
-	}
-
-	@Override
-	public int getLightBlock(BlockState state, BlockGetter world, BlockPos pos) {
-		return 0;
 	}
 
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {

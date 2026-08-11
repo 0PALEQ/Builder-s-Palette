@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.FenceGateBlock;
-import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.TintedParticleLeavesBlock;
 import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
@@ -1077,62 +1077,63 @@ public class BuildersPaletteModBlocks {
 	public static final RegistryObject<Block> END_STONE_PILLAR = pillar("end_stone_pillar", Blocks.END_STONE);
 
 	private static RegistryObject<Block> simpleBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+		return register(name, () -> new Block(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> woodBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new Block(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodPillar(String name, Block baseBlock) {
-		return register(name, () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new RotatedPillarBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodLeaves(String name, Block baseBlock) {
-		return register(name, () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new TintedParticleLeavesBlock(0.01f,
+				RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodFence(String name, Block baseBlock) {
-		return register(name, () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new FenceBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodFenceGate(String name, Block baseBlock) {
-		return register(name, () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new FenceGateBlock(WoodType.OAK, RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodPressurePlate(String name, Block baseBlock) {
-		return register(name, () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new PressurePlateBlock(BlockSetType.OAK, RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> woodButton(String name, Block baseBlock) {
-		return register(name, () -> new ButtonBlock(BlockSetType.OAK, 30, BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava()));
+		return register(name, () -> new ButtonBlock(BlockSetType.OAK, 30, RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock).ignitedByLava())));
 	}
 
 	private static RegistryObject<Block> pillar(String name, Block baseBlock) {
-		return register(name, () -> new RotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+		return register(name, () -> new RotatedPillarBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> stairs(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
+		return register(name, () -> new StairBlock(baseBlock.get().defaultBlockState(), RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> stairs(String name, Block baseBlock) {
-		return register(name, () -> new StairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+		return register(name, () -> new StairBlock(baseBlock.defaultBlockState(), RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> slab(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
+		return register(name, () -> new SlabBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> slab(String name, Block baseBlock) {
-		return register(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+		return register(name, () -> new SlabBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock))));
 	}
 
 	private static RegistryObject<Block> wall(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock.get())));
+		return register(name, () -> new WallBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock.get()))));
 	}
 
 	private static RegistryObject<Block> wall(String name, Block baseBlock) {
-		return register(name, () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(baseBlock)));
+		return register(name, () -> new WallBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(baseBlock))));
 	}
 }

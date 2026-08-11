@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_yellow_terracotta_slab"
-    }
+    "#": "builders_palette:polished_yellow_terracotta_slab"
   },
-  "result": {"id": "builders_palette:chiseled_yellow_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_yellow_terracotta",
     "count": 1
   },
   "show_notification": true

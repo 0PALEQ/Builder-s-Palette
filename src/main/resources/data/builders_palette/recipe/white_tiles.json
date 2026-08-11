@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:white_concrete"
-    }
+    "#": "minecraft:white_concrete"
   },
-  "result": {"id": "builders_palette:white_tiles",
+  "result": {
+    "id": "builders_palette:white_tiles",
     "count": 4
   },
   "show_notification": true

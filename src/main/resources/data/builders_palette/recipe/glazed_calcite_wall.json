@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:glazed_calcite"
-    }
+    "#": "builders_palette:glazed_calcite"
   },
-  "result": {"id": "builders_palette:glazed_calcite_wall",
+  "result": {
+    "id": "builders_palette:glazed_calcite_wall",
     "count": 6
   },
   "show_notification": true

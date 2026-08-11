@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:sandstone"
-    }
+    "#": "minecraft:sandstone"
   },
-  "result": {"id": "builders_palette:polished_sandstone",
+  "result": {
+    "id": "builders_palette:polished_sandstone",
     "count": 4
   },
   "show_notification": true

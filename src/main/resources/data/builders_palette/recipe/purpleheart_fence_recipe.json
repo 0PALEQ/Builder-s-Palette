@@ -7,14 +7,11 @@
     "aba"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:purpleheart_planks"
-    },
-    "b": {
-      "item": "minecraft:stick"
-    }
+    "a": "builders_palette:purpleheart_planks",
+    "b": "minecraft:stick"
   },
-  "result": {"id": "builders_palette:purpleheart_fence",
+  "result": {
+    "id": "builders_palette:purpleheart_fence",
     "count": 3
   }
 }

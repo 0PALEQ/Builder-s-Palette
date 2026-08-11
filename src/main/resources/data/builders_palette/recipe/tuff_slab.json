@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:tuff"
-    }
+    "#": "minecraft:tuff"
   },
-  "result": {"id": "builders_palette:tuff_slab",
+  "result": {
+    "id": "builders_palette:tuff_slab",
     "count": 6
   },
   "show_notification": true

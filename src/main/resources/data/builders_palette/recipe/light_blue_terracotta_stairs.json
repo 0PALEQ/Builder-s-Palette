@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:light_blue_terracotta"
-    }
+    "#": "minecraft:light_blue_terracotta"
   },
-  "result": {"id": "builders_palette:light_blue_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:light_blue_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

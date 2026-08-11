@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:glazed_end_stone"
-    }
+    "#": "builders_palette:glazed_end_stone"
   },
-  "result": {"id": "builders_palette:glazed_end_stone_slab",
+  "result": {
+    "id": "builders_palette:glazed_end_stone_slab",
     "count": 6
   },
   "show_notification": true

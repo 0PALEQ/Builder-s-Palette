@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:end_stone"
-    }
+    "#": "minecraft:end_stone"
   },
-  "result": {"id": "builders_palette:end_stone_wall",
+  "result": {
+    "id": "builders_palette:end_stone_wall",
     "count": 6
   },
   "show_notification": true

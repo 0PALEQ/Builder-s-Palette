@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:end_stone"
-  },
-  "result": {"id": "builders_palette:polished_end_stone", "count": 1}
+  "ingredient": "minecraft:end_stone",
+  "result": {
+    "id": "builders_palette:polished_end_stone",
+    "count": 1
+  }
 }

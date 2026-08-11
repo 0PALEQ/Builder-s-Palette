@@ -5,14 +5,11 @@
     "ab"
   ],
   "key": {
-    "a": {
-      "item": "minecraft:brick"
-    },
-    "b": {
-      "item": "minecraft:white_dye"
-    }
+    "a": "minecraft:brick",
+    "b": "minecraft:white_dye"
   },
-  "result": {"id": "builders_palette:white_brick",
+  "result": {
+    "id": "builders_palette:white_brick",
     "count": 1
   }
 }

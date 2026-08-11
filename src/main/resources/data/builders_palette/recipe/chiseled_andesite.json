@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_andesite_slab"
-    }
+    "#": "builders_palette:polished_andesite_slab"
   },
-  "result": {"id": "builders_palette:chiseled_andesite",
+  "result": {
+    "id": "builders_palette:chiseled_andesite",
     "count": 1
   },
   "show_notification": true

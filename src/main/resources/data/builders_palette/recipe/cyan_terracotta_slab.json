@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cyan_terracotta"
-    }
+    "#": "minecraft:cyan_terracotta"
   },
-  "result": {"id": "builders_palette:cyan_terracotta_slab",
+  "result": {
+    "id": "builders_palette:cyan_terracotta_slab",
     "count": 6
   },
   "show_notification": true

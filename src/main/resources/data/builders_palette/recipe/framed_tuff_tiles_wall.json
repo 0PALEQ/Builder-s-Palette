@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:framed_tuff_tiles"
-    }
+    "#": "builders_palette:framed_tuff_tiles"
   },
-  "result": {"id": "builders_palette:framed_tuff_tiles_wall",
+  "result": {
+    "id": "builders_palette:framed_tuff_tiles_wall",
     "count": 6
   },
   "show_notification": true

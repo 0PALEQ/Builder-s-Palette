@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:dark_oak_leaves"
-    },
-    {
-      "item": "minecraft:brown_dye"
-    }
+    "minecraft:dark_oak_leaves",
+    "minecraft:brown_dye"
   ],
-  "result": {"id": "builders_palette:walnut_leaves",
+  "result": {
+    "id": "builders_palette:walnut_leaves",
     "count": 1
   },
   "show_notification": true,
   "group": "builders_palette_leaves"
 }
-

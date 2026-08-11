@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_periwinkle_smooth_concrete"
-    }
+    "#": "builders_palette:pastel_periwinkle_smooth_concrete"
   },
-  "result": {"id": "builders_palette:pastel_periwinkle_smooth_concrete_wall",
+  "result": {
+    "id": "builders_palette:pastel_periwinkle_smooth_concrete_wall",
     "count": 6
   },
   "show_notification": true

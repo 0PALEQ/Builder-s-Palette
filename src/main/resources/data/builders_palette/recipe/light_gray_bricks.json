@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:bricks"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    }
+    "builders_palette:bricks",
+    "minecraft:light_gray_dye"
   ],
-  "result": {"id": "builders_palette:light_gray_bricks",
+  "result": {
+    "id": "builders_palette:light_gray_bricks",
     "count": 1
   },
   "show_notification": true,

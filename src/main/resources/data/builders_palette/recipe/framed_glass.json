@@ -7,14 +7,11 @@
     "igi"
   ],
   "key": {
-    "g": {
-      "item": "minecraft:glass_pane"
-    },
-    "i": {
-      "item": "minecraft:iron_nugget"
-    }
+    "g": "minecraft:glass_pane",
+    "i": "minecraft:iron_nugget"
   },
-  "result": {"id": "builders_palette:framed_glass",
+  "result": {
+    "id": "builders_palette:framed_glass",
     "count": 6
   },
   "show_notification": true

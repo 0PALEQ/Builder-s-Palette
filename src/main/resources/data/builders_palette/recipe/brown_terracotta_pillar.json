@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:brown_terracotta"
-    }
+    "#": "minecraft:brown_terracotta"
   },
-  "result": {"id": "builders_palette:brown_terracotta_pillar",
+  "result": {
+    "id": "builders_palette:brown_terracotta_pillar",
     "count": 2
   },
   "show_notification": true

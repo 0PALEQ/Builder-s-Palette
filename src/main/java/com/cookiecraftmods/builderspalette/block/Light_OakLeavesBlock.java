@@ -4,14 +4,14 @@ package com.cookiecraftmods.builderspalette.block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.TintedParticleLeavesBlock;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-public class Light_OakLeavesBlock extends LeavesBlock {
+public class Light_OakLeavesBlock extends TintedParticleLeavesBlock {
 	public Light_OakLeavesBlock() {
-		super(BuildersPaletteBlockProperties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
+		super(0.01f, BuildersPaletteBlockProperties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 1;

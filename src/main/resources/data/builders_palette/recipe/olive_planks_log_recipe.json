@@ -3,11 +3,10 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:olive_log"
-    }
+    "builders_palette:olive_log"
   ],
-  "result": {"id": "builders_palette:olive_planks",
+  "result": {
+    "id": "builders_palette:olive_planks",
     "count": 4
   }
 }

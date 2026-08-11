@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:red_concrete"
-    }
+    "#": "minecraft:red_concrete"
   },
-  "result": {"id": "builders_palette:red_pavement",
+  "result": {
+    "id": "builders_palette:red_pavement",
     "count": 4
   },
   "show_notification": true

@@ -1,5 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:chiseled_diorite"},
-  "result": {"id": "builders_palette:chiseled_diorite_slab", "count": 2}
+  "ingredient": "builders_palette:chiseled_diorite",
+  "result": {
+    "id": "builders_palette:chiseled_diorite_slab",
+    "count": 2
+  }
 }

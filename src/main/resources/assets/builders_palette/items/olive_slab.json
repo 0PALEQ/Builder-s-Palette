@@ -1,7 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/olive_slab"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/olive_slab"
+  }
 }
-

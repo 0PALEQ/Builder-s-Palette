@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:red_terracotta"
-    }
+    "#": "minecraft:red_terracotta"
   },
-  "result": {"id": "builders_palette:red_terracotta_pillar",
+  "result": {
+    "id": "builders_palette:red_terracotta_pillar",
     "count": 2
   },
   "show_notification": true

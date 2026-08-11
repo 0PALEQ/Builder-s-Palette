@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:calcite"
-    }
+    "#": "minecraft:calcite"
   },
-  "result": {"id": "builders_palette:calcite_stairs",
+  "result": {
+    "id": "builders_palette:calcite_stairs",
     "count": 4
   },
   "show_notification": true

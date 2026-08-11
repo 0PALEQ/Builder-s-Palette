@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/wenge_slab"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/wenge_slab"
+  }
 }

@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:polished_diorite"
-  },
-  "result": {"id": "builders_palette:chiseled_diorite", "count": 1}
+  "ingredient": "builders_palette:polished_diorite",
+  "result": {
+    "id": "builders_palette:chiseled_diorite",
+    "count": 1
+  }
 }

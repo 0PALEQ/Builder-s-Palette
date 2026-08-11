@@ -1,7 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "pattern": ["##", "##"],
-  "key": {"#": {"item": "minecraft:tuff"}},
-  "result": {"id": "builders_palette:tuff_bricks", "count": 4}
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:tuff"
+  },
+  "result": {
+    "id": "builders_palette:tuff_bricks",
+    "count": 4
+  }
 }

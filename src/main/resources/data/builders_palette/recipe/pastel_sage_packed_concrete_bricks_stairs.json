@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_sage_packed_concrete_bricks"
-    }
+    "#": "builders_palette:pastel_sage_packed_concrete_bricks"
   },
-  "result": {"id": "builders_palette:pastel_sage_packed_concrete_bricks_stairs",
+  "result": {
+    "id": "builders_palette:pastel_sage_packed_concrete_bricks_stairs",
     "count": 4
   },
   "show_notification": true

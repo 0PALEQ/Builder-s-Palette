@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:packed_mud"
-    }
+    "#": "minecraft:packed_mud"
   },
-  "result": {"id": "builders_palette:packed_mud_wall",
+  "result": {
+    "id": "builders_palette:packed_mud_wall",
     "count": 6
   },
   "show_notification": true

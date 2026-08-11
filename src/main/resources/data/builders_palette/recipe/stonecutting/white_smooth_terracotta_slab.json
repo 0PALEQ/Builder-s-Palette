@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:white_smooth_terracotta"
-  },
-  "result": {"id": "builders_palette:white_smooth_terracotta_slab", "count": 2}
+  "ingredient": "builders_palette:white_smooth_terracotta",
+  "result": {
+    "id": "builders_palette:white_smooth_terracotta_slab",
+    "count": 2
+  }
 }

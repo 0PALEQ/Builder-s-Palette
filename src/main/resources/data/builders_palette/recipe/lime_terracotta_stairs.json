@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lime_terracotta"
-    }
+    "#": "minecraft:lime_terracotta"
   },
-  "result": {"id": "builders_palette:lime_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:lime_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

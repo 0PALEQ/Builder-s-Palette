@@ -7,11 +7,10 @@
     "a"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:cedar_planks"
-    }
+    "a": "builders_palette:cedar_planks"
   },
-  "result": {"id": "minecraft:stick",
+  "result": {
+    "id": "minecraft:stick",
     "count": 4
   }
 }

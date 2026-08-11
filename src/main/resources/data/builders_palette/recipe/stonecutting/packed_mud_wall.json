@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:packed_mud"
-  },
-  "result": {"id": "builders_palette:packed_mud_wall", "count": 1}
+  "ingredient": "minecraft:packed_mud",
+  "result": {
+    "id": "builders_palette:packed_mud_wall",
+    "count": 1
+  }
 }

@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:cherry_leaves"
-    },
-    {
-      "item": "minecraft:purple_dye"
-    }
+    "minecraft:cherry_leaves",
+    "minecraft:purple_dye"
   ],
-  "result": {"id": "builders_palette:purpleheart_leaves",
+  "result": {
+    "id": "builders_palette:purpleheart_leaves",
     "count": 1
   },
   "show_notification": true,
   "group": "builders_palette_leaves"
 }
-

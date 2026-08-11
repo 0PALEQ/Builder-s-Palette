@@ -3,11 +3,10 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:dark_red_log"
-    }
+    "builders_palette:dark_red_log"
   ],
-  "result": {"id": "builders_palette:dark_red_planks",
+  "result": {
+    "id": "builders_palette:dark_red_planks",
     "count": 4
   }
 }

@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:lime_terracotta_bricks"
-    }
+    "#": "builders_palette:lime_terracotta_bricks"
   },
-  "result": {"id": "builders_palette:lime_terracotta_bricks_wall",
+  "result": {
+    "id": "builders_palette:lime_terracotta_bricks_wall",
     "count": 6
   },
   "show_notification": true

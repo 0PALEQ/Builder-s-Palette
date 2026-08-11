@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:magenta_terracotta"
-    }
+    "#": "minecraft:magenta_terracotta"
   },
-  "result": {"id": "builders_palette:polished_magenta_terracotta",
+  "result": {
+    "id": "builders_palette:polished_magenta_terracotta",
     "count": 4
   },
   "show_notification": true

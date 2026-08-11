@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:calcite"
-    }
+    "#": "minecraft:calcite"
   },
-  "result": {"id": "builders_palette:polished_calcite",
+  "result": {
+    "id": "builders_palette:polished_calcite",
     "count": 4
   },
   "show_notification": true

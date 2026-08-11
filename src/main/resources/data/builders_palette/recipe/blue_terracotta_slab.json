@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:blue_terracotta"
-    }
+    "#": "minecraft:blue_terracotta"
   },
-  "result": {"id": "builders_palette:blue_terracotta_slab",
+  "result": {
+    "id": "builders_palette:blue_terracotta_slab",
     "count": 6
   },
   "show_notification": true

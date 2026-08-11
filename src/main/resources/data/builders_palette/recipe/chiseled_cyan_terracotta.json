@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_cyan_terracotta_slab"
-    }
+    "#": "builders_palette:polished_cyan_terracotta_slab"
   },
-  "result": {"id": "builders_palette:chiseled_cyan_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_cyan_terracotta",
     "count": 1
   },
   "show_notification": true

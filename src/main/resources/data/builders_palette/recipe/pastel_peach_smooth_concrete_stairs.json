@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_peach_smooth_concrete"
-    }
+    "#": "builders_palette:pastel_peach_smooth_concrete"
   },
-  "result": {"id": "builders_palette:pastel_peach_smooth_concrete_stairs",
+  "result": {
+    "id": "builders_palette:pastel_peach_smooth_concrete_stairs",
     "count": 4
   },
   "show_notification": true

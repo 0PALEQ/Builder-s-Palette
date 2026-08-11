@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:cracked_bricks"
-    }
+    "#": "builders_palette:cracked_bricks"
   },
-  "result": {"id": "builders_palette:cracked_bricks_wall",
+  "result": {
+    "id": "builders_palette:cracked_bricks_wall",
     "count": 6
   },
   "show_notification": true

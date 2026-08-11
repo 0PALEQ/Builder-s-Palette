@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:diorite"
-    }
+    "#": "minecraft:diorite"
   },
-  "result": {"id": "builders_palette:diorite_pillar",
+  "result": {
+    "id": "builders_palette:diorite_pillar",
     "count": 2
   },
   "show_notification": true

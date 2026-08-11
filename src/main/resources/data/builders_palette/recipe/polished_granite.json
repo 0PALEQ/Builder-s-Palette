@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:granite"
-    }
+    "#": "minecraft:granite"
   },
-  "result": {"id": "builders_palette:polished_granite",
+  "result": {
+    "id": "builders_palette:polished_granite",
     "count": 4
   },
   "show_notification": true

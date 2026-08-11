@@ -2,17 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "minecraft:spruce_leaves"
-    },
-    {
-      "item": "minecraft:cyan_dye"
-    }
+    "minecraft:spruce_leaves",
+    "minecraft:cyan_dye"
   ],
-  "result": {"id": "builders_palette:cedar_leaves",
+  "result": {
+    "id": "builders_palette:cedar_leaves",
     "count": 1
   },
   "show_notification": true,
   "group": "builders_palette_leaves"
 }
-

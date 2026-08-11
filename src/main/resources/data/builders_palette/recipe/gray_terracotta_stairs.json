@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:gray_terracotta"
-    }
+    "#": "minecraft:gray_terracotta"
   },
-  "result": {"id": "builders_palette:gray_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:gray_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

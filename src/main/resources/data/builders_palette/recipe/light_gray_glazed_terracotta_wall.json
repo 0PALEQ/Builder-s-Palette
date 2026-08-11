@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:light_gray_glazed_terracotta"
-    }
+    "#": "minecraft:light_gray_glazed_terracotta"
   },
-  "result": {"id": "builders_palette:light_gray_glazed_terracotta_wall",
+  "result": {
+    "id": "builders_palette:light_gray_glazed_terracotta_wall",
     "count": 6
   },
   "show_notification": true

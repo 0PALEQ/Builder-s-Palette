@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:weathered_tuff_tiles"
-    }
+    "#": "builders_palette:weathered_tuff_tiles"
   },
-  "result": {"id": "builders_palette:weathered_tuff_tiles_slab",
+  "result": {
+    "id": "builders_palette:weathered_tuff_tiles_slab",
     "count": 6
   },
   "show_notification": true

@@ -1,5 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:packed_blue_terracotta_bricks"},
-  "result": {"id": "builders_palette:packed_blue_terracotta_bricks_slab", "count": 2}
+  "ingredient": "builders_palette:packed_blue_terracotta_bricks",
+  "result": {
+    "id": "builders_palette:packed_blue_terracotta_bricks_slab",
+    "count": 2
+  }
 }

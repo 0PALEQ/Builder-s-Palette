@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:yellow_terracotta"
-    }
+    "#": "minecraft:yellow_terracotta"
   },
-  "result": {"id": "builders_palette:yellow_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:yellow_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:black_bricks"
-    }
+    "#": "builders_palette:black_bricks"
   },
-  "result": {"id": "builders_palette:black_bricks_wall",
+  "result": {
+    "id": "builders_palette:black_bricks_wall",
     "count": 6
   },
   "show_notification": true

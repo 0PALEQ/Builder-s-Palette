@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_peach_smooth_concrete"
-    }
+    "#": "builders_palette:pastel_peach_smooth_concrete"
   },
-  "result": {"id": "builders_palette:pastel_peach_concrete_pillar",
+  "result": {
+    "id": "builders_palette:pastel_peach_concrete_pillar",
     "count": 2
   },
   "show_notification": true

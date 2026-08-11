@@ -139,8 +139,8 @@ def recipe(block_id: str, ingredient: str) -> dict:
         "type": "minecraft:crafting_shaped",
         "category": "building",
         "pattern": ["###", "###"],
-        "key": {"#": {"item": f"builders_palette:{ingredient}"}},
-        "result": {"item": f"builders_palette:{block_id}", "count": 6},
+        "key": {"#": f"builders_palette:{ingredient}"},
+        "result": {"id": f"builders_palette:{block_id}", "count": 6},
         "show_notification": True,
     }
 
@@ -220,8 +220,8 @@ def main() -> int:
                 ASSETS / f"models/item/{old_id}.json",
                 ASSETS / f"items/{old_id}.json",
                 ASSETS / f"textures/block/{old_id}_back.png",
-                DATA / f"builders_palette/loot_tables/blocks/{old_id}.json",
-                DATA / f"builders_palette/recipes/{old_id}.json",
+                DATA / f"builders_palette/loot_table/blocks/{old_id}.json",
+                DATA / f"builders_palette/recipe/{old_id}.json",
             )
         )
     text_outputs[ASSETS / "models/custom/wood_wall_slats.json"] = json_text(fixed_slats_model())
@@ -233,8 +233,8 @@ def main() -> int:
         text_outputs[ASSETS / f"items/{block_id}.json"] = json_text(
             {"model": {"type": "minecraft:model", "model": f"builders_palette:item/{block_id}"}}
         )
-        text_outputs[DATA / f"builders_palette/loot_tables/blocks/{block_id}.json"] = json_text(loot_table(block_id))
-        text_outputs[DATA / f"builders_palette/recipes/{block_id}.json"] = json_text(recipe(block_id, ingredient))
+        text_outputs[DATA / f"builders_palette/loot_table/blocks/{block_id}.json"] = json_text(loot_table(block_id))
+        text_outputs[DATA / f"builders_palette/recipe/{block_id}.json"] = json_text(recipe(block_id, ingredient))
         source = ASSETS / f"textures/block/{texture}.png"
         if not source.is_file():
             raise FileNotFoundError(f"Missing plank texture for {display_name}: {source}")
@@ -288,7 +288,7 @@ def main() -> int:
 
         text_outputs[lang_path] = update_json(lang_path, add_names)
 
-    axe_path = DATA / "minecraft/tags/blocks/mineable/axe.json"
+    axe_path = DATA / "minecraft/tags/block/mineable/axe.json"
 
     def add_axe_values(value: dict) -> None:
         values = value.setdefault("values", [])

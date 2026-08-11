@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:calcite"
-    }
+    "#": "minecraft:calcite"
   },
-  "result": {"id": "builders_palette:calcite_slab",
+  "result": {
+    "id": "builders_palette:calcite_slab",
     "count": 6
   },
   "show_notification": true

@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:blue_terracotta"
-    }
+    "#": "minecraft:blue_terracotta"
   },
-  "result": {"id": "builders_palette:polished_blue_terracotta",
+  "result": {
+    "id": "builders_palette:polished_blue_terracotta",
     "count": 4
   },
   "show_notification": true

@@ -3,11 +3,10 @@
   "group": "planks",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:purpleheart_wood"
-    }
+    "builders_palette:purpleheart_wood"
   ],
-  "result": {"id": "builders_palette:purpleheart_planks",
+  "result": {
+    "id": "builders_palette:purpleheart_planks",
     "count": 4
   }
 }

@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:light_blue_concrete"
-    }
+    "#": "minecraft:light_blue_concrete"
   },
-  "result": {"id": "builders_palette:light_blue_tiles",
+  "result": {
+    "id": "builders_palette:light_blue_tiles",
     "count": 4
   },
   "show_notification": true

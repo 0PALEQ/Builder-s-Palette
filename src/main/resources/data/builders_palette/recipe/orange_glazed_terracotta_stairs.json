@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:orange_glazed_terracotta"
-    }
+    "#": "minecraft:orange_glazed_terracotta"
   },
-  "result": {"id": "builders_palette:orange_glazed_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:orange_glazed_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

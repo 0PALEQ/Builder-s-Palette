@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_lime_terracotta_slab"
-    }
+    "#": "builders_palette:polished_lime_terracotta_slab"
   },
-  "result": {"id": "builders_palette:chiseled_lime_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_lime_terracotta",
     "count": 1
   },
   "show_notification": true

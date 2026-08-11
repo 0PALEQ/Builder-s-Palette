@@ -7,11 +7,10 @@
     "aa"
   ],
   "key": {
-    "a": {
-      "item": "builders_palette:maple_log"
-    }
+    "a": "builders_palette:maple_log"
   },
-  "result": {"id": "builders_palette:maple_wood",
+  "result": {
+    "id": "builders_palette:maple_wood",
     "count": 3
   }
 }

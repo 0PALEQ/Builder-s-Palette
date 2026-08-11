@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:pink_terracotta"
-    }
+    "#": "minecraft:pink_terracotta"
   },
-  "result": {"id": "builders_palette:pink_terracotta_stairs",
+  "result": {
+    "id": "builders_palette:pink_terracotta_stairs",
     "count": 4
   },
   "show_notification": true

@@ -7,11 +7,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:glazed_andesite"
-    }
+    "#": "builders_palette:glazed_andesite"
   },
-  "result": {"id": "builders_palette:glazed_andesite_stairs",
+  "result": {
+    "id": "builders_palette:glazed_andesite_stairs",
     "count": 4
   },
   "show_notification": true

@@ -1,5 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_red_sandstone"},
-  "result": {"id": "builders_palette:polished_red_sandstone_slab", "count": 2}
+  "ingredient": "builders_palette:polished_red_sandstone",
+  "result": {
+    "id": "builders_palette:polished_red_sandstone_slab",
+    "count": 2
+  }
 }

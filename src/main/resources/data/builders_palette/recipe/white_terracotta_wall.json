@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:white_terracotta"
-    }
+    "#": "minecraft:white_terracotta"
   },
-  "result": {"id": "builders_palette:white_terracotta_wall",
+  "result": {
+    "id": "builders_palette:white_terracotta_wall",
     "count": 6
   },
   "show_notification": true

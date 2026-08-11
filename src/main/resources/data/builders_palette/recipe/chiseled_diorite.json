@@ -6,11 +6,10 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:polished_diorite_slab"
-    }
+    "#": "builders_palette:polished_diorite_slab"
   },
-  "result": {"id": "builders_palette:chiseled_diorite",
+  "result": {
+    "id": "builders_palette:chiseled_diorite",
     "count": 1
   },
   "show_notification": true

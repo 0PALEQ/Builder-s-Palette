@@ -118,7 +118,7 @@ def shaped(pattern: list[str], key: dict, result: str, count: int) -> dict:
         "category": "building",
         "pattern": pattern,
         "key": key,
-        "result": {"item": result, "count": count},
+        "result": {"id": result, "count": count},
         "show_notification": True,
     }
 
@@ -128,7 +128,7 @@ def add_family_resources(outputs: dict[Path, bytes], base_id: str, pillar: bool)
     block_models = ASSETS / "models/block"
     item_models = ASSETS / "models/item"
     item_defs = ASSETS / "items"
-    loot = DATA / f"{NAMESPACE}/loot_tables/blocks"
+    loot = DATA / f"{NAMESPACE}/loot_table/blocks"
 
     if pillar:
         side = f"{NAMESPACE}:block/{base_id}_side"
@@ -187,8 +187,8 @@ def add_family_resources(outputs: dict[Path, bytes], base_id: str, pillar: bool)
 
 
 def add_shape_recipes(outputs: dict[Path, bytes], base_id: str) -> None:
-    recipes = DATA / f"{NAMESPACE}/recipes"
-    ingredient = {"item": f"{NAMESPACE}:{base_id}"}
+    recipes = DATA / f"{NAMESPACE}/recipe"
+    ingredient = f"{NAMESPACE}:{base_id}"
     outputs[recipes / f"{base_id}_stairs.json"] = json_bytes(
         shaped(["#  ", "## ", "###"], {"#": ingredient}, f"{NAMESPACE}:{base_id}_stairs", 4)
     )
@@ -242,7 +242,7 @@ public final class GeneratedPastelConcrete {{
 \t\titemsRegistered = true;
 \t\tfor (RegistryObject<Block> block : BLOCKS) {{
 \t\t\tRegistryObject.register(BuiltInRegistries.ITEM, block.getId().getPath(),
-\t\t\t\t\t() -> new BlockItem(block.get(), new Item.Properties()));
+\t\t\t\t\t() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Properties())));
 \t\t}}
 \t}}
 
@@ -254,13 +254,13 @@ public final class GeneratedPastelConcrete {{
 \t\tRegistryObject<Block> base = pillar
 \t\t\t\t? register(name, () -> new RotatedPillarBlock(settings()))
 \t\t\t\t: register(name, () -> new Block(settings()));
-\t\tregister(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(), BlockBehaviour.Properties.copy(base.get())));
-\t\tregister(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(base.get())));
-\t\tregister(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(base.get())));
+\t\tregister(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(), RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
+\t\tregister(name + "_slab", () -> new SlabBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
+\t\tregister(name + "_wall", () -> new WallBlock(RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 \t}}
 
 \tprivate static BlockBehaviour.Properties settings() {{
-\t\treturn BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.8f, 6.0f).requiresCorrectToolForDrops();
+\t\treturn RegistryObject.blockSettings(BlockBehaviour.Properties.of()).sound(SoundType.STONE).strength(1.8f, 6.0f).requiresCorrectToolForDrops();
 \t}}
 
 \tprivate static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {{
@@ -335,20 +335,20 @@ def build_plan() -> tuple[dict[Path, bytes], set[Path], dict]:
         outputs.update(texture_outputs)
         owned.update(texture_outputs)
 
-        recipes = DATA / f"{NAMESPACE}/recipes"
+        recipes = DATA / f"{NAMESPACE}/recipe"
         outputs[recipes / f"{smooth}.json"] = json_bytes(shaped(
             ["###", "#D#", "###"],
-            {"#": {"item": "minecraft:white_concrete"}, "D": {"item": f"minecraft:{dye}"}},
+            {"#": "minecraft:white_concrete", "D": f"minecraft:{dye}"},
             f"{NAMESPACE}:{smooth}", 8,
         ))
         outputs[recipes / f"{bricks}.json"] = json_bytes(shaped(
-            ["##", "##"], {"#": {"item": f"{NAMESPACE}:{smooth}"}}, f"{NAMESPACE}:{bricks}", 4,
+            ["##", "##"], {"#": f"{NAMESPACE}:{smooth}"}, f"{NAMESPACE}:{bricks}", 4,
         ))
         outputs[recipes / f"{packed}.json"] = json_bytes(shaped(
-            ["##", "##"], {"#": {"item": f"{NAMESPACE}:{bricks}"}}, f"{NAMESPACE}:{packed}", 4,
+            ["##", "##"], {"#": f"{NAMESPACE}:{bricks}"}, f"{NAMESPACE}:{packed}", 4,
         ))
         outputs[recipes / f"{pillar}.json"] = json_bytes(shaped(
-            ["#", "#"], {"#": {"item": f"{NAMESPACE}:{smooth}"}}, f"{NAMESPACE}:{pillar}", 2,
+            ["#", "#"], {"#": f"{NAMESPACE}:{smooth}"}, f"{NAMESPACE}:{pillar}", 2,
         ))
         owned.update((recipes / f"{base}.json" for base in (smooth, bricks, packed, pillar)))
 
@@ -360,12 +360,12 @@ def build_plan() -> tuple[dict[Path, bytes], set[Path], dict]:
             owned.update(set(outputs) - before)
             for block_id, suffix in zip(block_ids(base_id), ("", " Stairs", " Slab", " Wall")):
                 lang[f"block.{NAMESPACE}.{block_id}"] = display_name + suffix
-                tag("src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json", block_id)
-            tag("src/main/resources/data/minecraft/tags/blocks/stairs.json", f"{base_id}_stairs")
-            tag("src/main/resources/data/minecraft/tags/items/stairs.json", f"{base_id}_stairs")
-            tag("src/main/resources/data/minecraft/tags/blocks/slabs.json", f"{base_id}_slab")
-            tag("src/main/resources/data/minecraft/tags/items/slabs.json", f"{base_id}_slab")
-            tag("src/main/resources/data/minecraft/tags/blocks/walls.json", f"{base_id}_wall")
+                tag("src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json", block_id)
+            tag("src/main/resources/data/minecraft/tags/block/stairs.json", f"{base_id}_stairs")
+            tag("src/main/resources/data/minecraft/tags/item/stairs.json", f"{base_id}_stairs")
+            tag("src/main/resources/data/minecraft/tags/block/slabs.json", f"{base_id}_slab")
+            tag("src/main/resources/data/minecraft/tags/item/slabs.json", f"{base_id}_slab")
+            tag("src/main/resources/data/minecraft/tags/block/walls.json", f"{base_id}_wall")
 
     outputs[JAVA] = generated_java(families)
     update_shared_json(outputs, state, lang, tags)

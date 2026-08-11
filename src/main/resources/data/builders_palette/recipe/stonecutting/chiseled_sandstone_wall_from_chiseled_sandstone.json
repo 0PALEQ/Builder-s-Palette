@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:chiseled_sandstone"
-  },
-  "result": {"id": "builders_palette:chiseled_sandstone_wall", "count": 1}
+  "ingredient": "minecraft:chiseled_sandstone",
+  "result": {
+    "id": "builders_palette:chiseled_sandstone_wall",
+    "count": 1
+  }
 }

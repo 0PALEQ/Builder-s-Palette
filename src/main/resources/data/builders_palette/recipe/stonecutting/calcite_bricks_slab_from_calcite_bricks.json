@@ -1,5 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:calcite_bricks"},
-  "result": {"id": "builders_palette:calcite_bricks_slab", "count": 2}
+  "ingredient": "builders_palette:calcite_bricks",
+  "result": {
+    "id": "builders_palette:calcite_bricks_slab",
+    "count": 2
+  }
 }

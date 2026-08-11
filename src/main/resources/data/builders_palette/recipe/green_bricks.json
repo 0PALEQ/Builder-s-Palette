@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "category": "building",
   "ingredients": [
-    {
-      "item": "builders_palette:bricks"
-    },
-    {
-      "item": "minecraft:green_dye"
-    }
+    "builders_palette:bricks",
+    "minecraft:green_dye"
   ],
-  "result": {"id": "builders_palette:green_bricks",
+  "result": {
+    "id": "builders_palette:green_bricks",
     "count": 1
   },
   "show_notification": true,

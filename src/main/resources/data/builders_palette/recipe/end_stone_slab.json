@@ -5,11 +5,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:end_stone"
-    }
+    "#": "minecraft:end_stone"
   },
-  "result": {"id": "builders_palette:end_stone_slab",
+  "result": {
+    "id": "builders_palette:end_stone_slab",
     "count": 6
   },
   "show_notification": true

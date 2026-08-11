@@ -1,7 +1,8 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "minecraft:terracotta"
-  },
-  "result": {"id": "builders_palette:terracotta_wall", "count": 1}
+  "ingredient": "minecraft:terracotta",
+  "result": {
+    "id": "builders_palette:terracotta_wall",
+    "count": 1
+  }
 }

@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:lime_terracotta"
-    }
+    "#": "minecraft:lime_terracotta"
   },
-  "result": {"id": "builders_palette:polished_lime_terracotta",
+  "result": {
+    "id": "builders_palette:polished_lime_terracotta",
     "count": 4
   },
   "show_notification": true

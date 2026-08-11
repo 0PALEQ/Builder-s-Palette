@@ -1,7 +1,7 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -16,7 +16,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 public class BlackNWhiteTilesBlock extends Block {
-	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public BlackNWhiteTilesBlock() {
 		super(BuildersPaletteBlockProperties.of().sound(SoundType.STONE).strength(1f, 10f));

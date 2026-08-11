@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_aqua_smooth_concrete"
-    }
+    "#": "builders_palette:pastel_aqua_smooth_concrete"
   },
-  "result": {"id": "builders_palette:pastel_aqua_concrete_bricks",
+  "result": {
+    "id": "builders_palette:pastel_aqua_concrete_bricks",
     "count": 4
   },
   "show_notification": true

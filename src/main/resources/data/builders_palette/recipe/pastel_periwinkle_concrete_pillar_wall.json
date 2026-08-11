@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:pastel_periwinkle_concrete_pillar"
-    }
+    "#": "builders_palette:pastel_periwinkle_concrete_pillar"
   },
-  "result": {"id": "builders_palette:pastel_periwinkle_concrete_pillar_wall",
+  "result": {
+    "id": "builders_palette:pastel_periwinkle_concrete_pillar_wall",
     "count": 6
   },
   "show_notification": true

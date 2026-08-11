@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:brick"
-    }
+    "#": "minecraft:brick"
   },
-  "result": {"id": "builders_palette:bricks",
+  "result": {
+    "id": "builders_palette:bricks",
     "count": 1
   },
   "show_notification": true

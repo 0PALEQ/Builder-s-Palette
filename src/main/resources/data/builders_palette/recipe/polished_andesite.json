@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:andesite"
-    }
+    "#": "minecraft:andesite"
   },
-  "result": {"id": "builders_palette:polished_andesite",
+  "result": {
+    "id": "builders_palette:polished_andesite",
     "count": 4
   },
   "show_notification": true

@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:chiseled_red_sandstone"
-    }
+    "#": "minecraft:chiseled_red_sandstone"
   },
-  "result": {"id": "builders_palette:chiseled_red_sandstone_wall",
+  "result": {
+    "id": "builders_palette:chiseled_red_sandstone_wall",
     "count": 6
   }
 }

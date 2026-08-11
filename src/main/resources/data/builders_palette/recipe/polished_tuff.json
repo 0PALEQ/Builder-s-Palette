@@ -6,11 +6,10 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:tuff"
-    }
+    "#": "minecraft:tuff"
   },
-  "result": {"id": "builders_palette:polished_tuff",
+  "result": {
+    "id": "builders_palette:polished_tuff",
     "count": 4
   },
   "show_notification": true

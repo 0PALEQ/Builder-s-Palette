@@ -6,11 +6,10 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "builders_palette:peach_bricks"
-    }
+    "#": "builders_palette:peach_bricks"
   },
-  "result": {"id": "builders_palette:peach_bricks_wall",
+  "result": {
+    "id": "builders_palette:peach_bricks_wall",
     "count": 6
   },
   "show_notification": true

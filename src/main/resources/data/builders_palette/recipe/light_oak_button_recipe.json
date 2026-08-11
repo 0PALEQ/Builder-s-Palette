@@ -3,11 +3,10 @@
   "group": "wooden_button",
   "category": "redstone",
   "ingredients": [
-    {
-      "item": "builders_palette:light_oak_planks"
-    }
+    "builders_palette:light_oak_planks"
   ],
-  "result": {"id": "builders_palette:light_oak_button",
+  "result": {
+    "id": "builders_palette:light_oak_button",
     "count": 1
   }
 }
