@@ -2,7 +2,7 @@
 package com.cookiecraftmods.builderspalette.block;
 
 import net.minecraft.fluid.FluidState;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.sound.BlockSoundGroup;
@@ -13,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class FramedGlassBlock extends PaneBlock {
 	public FramedGlassBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(Instrument.BASEDRUM).sounds(BlockSoundGroup.GLASS).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.GLASS).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
 	}
 	public boolean shouldDisplayFluidOverlay(BlockState state, BlockRenderView world, BlockPos pos, FluidState fluidstate) {
 		return true;

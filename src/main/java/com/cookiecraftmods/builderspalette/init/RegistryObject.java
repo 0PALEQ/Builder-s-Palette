@@ -16,7 +16,7 @@ public final class RegistryObject<T> {
 	}
 
 	public static <T> RegistryObject<T> register(Registry<? super T> registry, String name, Supplier<? extends T> supplier) {
-		Identifier id = new Identifier(BuildersPaletteMod.MODID, name);
+		Identifier id = Identifier.of(BuildersPaletteMod.MODID, name);
 		T value = supplier.get();
 		Registry.register(registry, id, value);
 		return new RegistryObject<>(id, value);

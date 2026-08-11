@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_sandstone"},
-  "result": "builders_palette:polished_sandstone_wall",
-  "count": 1
-}

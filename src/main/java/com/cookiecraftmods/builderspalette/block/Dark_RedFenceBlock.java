@@ -1,7 +1,7 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.sound.BlockSoundGroup;
@@ -12,7 +12,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class Dark_RedFenceBlock extends FenceBlock {
 	public Dark_RedFenceBlock() {
-		super(BuildersPaletteBlockProperties.of().burnable().instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f, 3f).solid());
+		super(BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f, 3f).solid());
 	}
 	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
 		return 0;

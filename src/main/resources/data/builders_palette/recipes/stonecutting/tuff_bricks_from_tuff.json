@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "minecraft:tuff"},
-  "result": "builders_palette:tuff_bricks",
-  "count": 1
-}

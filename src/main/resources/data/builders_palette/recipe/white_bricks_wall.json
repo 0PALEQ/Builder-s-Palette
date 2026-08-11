@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:white_bricks"
+    }
+  },
+  "result": {
+    "id": "builders_palette:white_bricks_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

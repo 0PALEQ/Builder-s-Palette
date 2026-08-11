@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:pink_smooth_terracotta"
+  },
+  "result": {"id": "builders_palette:pink_smooth_terracotta_stairs"},
+  "count": 1
+}

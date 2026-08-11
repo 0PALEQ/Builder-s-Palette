@@ -1,7 +1,7 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.state.property.Properties;
 import net.minecraft.state.StateManager;
@@ -19,7 +19,7 @@ public class Dark_RedWoodBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
 
 	public Dark_RedWoodBlock() {
-		super(BuildersPaletteBlockProperties.of().burnable().instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f));
+		super(BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f));
 		this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y));
 	}
 	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {

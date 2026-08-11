@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:peach_bricks"
+  },
+  "result": {"id": "builders_palette:peach_bricks_slab"},
+  "count": 2
+}

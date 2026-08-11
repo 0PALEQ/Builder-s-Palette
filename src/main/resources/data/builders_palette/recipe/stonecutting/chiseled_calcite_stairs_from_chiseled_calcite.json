@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:chiseled_calcite"},
+  "result": {"id": "builders_palette:chiseled_calcite_stairs"},
+  "count": 1
+}

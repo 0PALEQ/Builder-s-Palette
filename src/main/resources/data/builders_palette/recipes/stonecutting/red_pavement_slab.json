@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:red_pavement"
-  },
-  "result": "builders_palette:red_pavement_slab",
-  "count": 2
-}

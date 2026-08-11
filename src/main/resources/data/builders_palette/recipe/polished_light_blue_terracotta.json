@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:light_blue_terracotta"
+    }
+  },
+  "result": {
+    "id": "builders_palette:polished_light_blue_terracotta",
+    "count": 4
+  },
+  "show_notification": true
+}

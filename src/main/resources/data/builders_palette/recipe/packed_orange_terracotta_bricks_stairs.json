@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["#  ", "## ", "###"],
+  "key": {"#": {"item": "builders_palette:packed_orange_terracotta_bricks"}},
+  "result": {"id": "builders_palette:packed_orange_terracotta_bricks_stairs", "count": 4}
+}

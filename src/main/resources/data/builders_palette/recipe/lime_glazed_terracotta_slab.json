@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lime_glazed_terracotta"
+    }
+  },
+  "result": {
+    "id": "builders_palette:lime_glazed_terracotta_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

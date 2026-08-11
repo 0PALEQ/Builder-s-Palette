@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:andesite"
+    }
+  },
+  "result": {
+    "id": "builders_palette:andesite_pillar",
+    "count": 2
+  },
+  "show_notification": true
+}

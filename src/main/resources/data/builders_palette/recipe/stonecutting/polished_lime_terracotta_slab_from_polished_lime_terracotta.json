@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:polished_lime_terracotta"},
+  "result": {"id": "builders_palette:polished_lime_terracotta_slab"},
+  "count": 2
+}

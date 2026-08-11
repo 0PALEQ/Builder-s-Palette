@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:packed_granite_bricks"},
-  "result": "builders_palette:packed_granite_bricks_stairs",
-  "count": 1
-}

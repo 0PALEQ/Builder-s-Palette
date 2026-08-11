@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purple_terracotta"
+    }
+  },
+  "result": {
+    "id": "builders_palette:purple_terracotta_bricks",
+    "count": 4
+  },
+  "show_notification": true
+}

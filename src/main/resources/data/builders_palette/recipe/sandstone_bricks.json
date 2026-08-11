@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["##", "##"],
+  "key": {"#": {"item": "minecraft:sandstone"}},
+  "result": {"id": "builders_palette:sandstone_bricks", "count": 4}
+}

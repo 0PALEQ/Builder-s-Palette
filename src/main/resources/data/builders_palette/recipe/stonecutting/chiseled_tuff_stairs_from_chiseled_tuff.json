@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:chiseled_tuff"},
+  "result": {"id": "builders_palette:chiseled_tuff_stairs"},
+  "count": 1
+}

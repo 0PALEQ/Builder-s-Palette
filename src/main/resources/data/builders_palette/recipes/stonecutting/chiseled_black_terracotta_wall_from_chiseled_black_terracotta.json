@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:chiseled_black_terracotta"},
-  "result": "builders_palette:chiseled_black_terracotta_wall",
-  "count": 1
-}

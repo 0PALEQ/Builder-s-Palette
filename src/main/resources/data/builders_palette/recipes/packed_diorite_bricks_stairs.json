@@ -1,7 +1,0 @@
-{
-  "type": "minecraft:crafting_shaped",
-  "category": "building",
-  "pattern": ["#  ", "## ", "###"],
-  "key": {"#": {"item": "builders_palette:packed_diorite_bricks"}},
-  "result": {"item": "builders_palette:packed_diorite_bricks_stairs", "count": 4}
-}

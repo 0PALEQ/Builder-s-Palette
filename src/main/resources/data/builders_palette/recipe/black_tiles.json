@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "result": {
+    "id": "builders_palette:black_tiles",
+    "count": 4
+  },
+  "show_notification": true
+}
