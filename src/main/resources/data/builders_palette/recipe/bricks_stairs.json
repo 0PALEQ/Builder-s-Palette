@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:bricks"
+    }
+  },
+  "result": {
+    "id": "builders_palette:bricks_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

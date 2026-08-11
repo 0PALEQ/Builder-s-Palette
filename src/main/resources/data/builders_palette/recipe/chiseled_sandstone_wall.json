@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:chiseled_sandstone"
+    }
+  },
+  "result": {
+    "id": "builders_palette:chiseled_sandstone_wall",
+    "count": 6
+  }
+}

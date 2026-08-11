@@ -4,7 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalFacingBlock;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
@@ -23,7 +23,7 @@ public class WoodWallSlatsBlock extends Block {
 
 	public WoodWallSlatsBlock() {
 		super(BuildersPaletteBlockProperties.of()
-			.instrument(Instrument.BASEDRUM)
+			.instrument(NoteBlockInstrument.BASEDRUM)
 			.sounds(BlockSoundGroup.WOOD)
 			.strength(1f, 10f)
 			.nonOpaque()

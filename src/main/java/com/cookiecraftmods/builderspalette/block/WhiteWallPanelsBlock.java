@@ -4,7 +4,7 @@ package com.cookiecraftmods.builderspalette.block;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.StateManager;
 import net.minecraft.block.BlockState;
@@ -23,7 +23,7 @@ public class WhiteWallPanelsBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
 	public WhiteWallPanelsBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(Instrument.BASEDRUM).sounds(BlockSoundGroup.METAL).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.METAL).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
 		this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
 	}
 	public boolean hasSidedTransparency(BlockState state) {

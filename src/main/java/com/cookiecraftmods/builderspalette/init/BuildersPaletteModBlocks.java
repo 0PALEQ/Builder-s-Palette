@@ -1097,16 +1097,16 @@ public class BuildersPaletteModBlocks {
 	}
 
 	private static RegistryObject<Block> woodFenceGate(String name, Block baseBlock) {
-		return register(name, () -> new FenceGateBlock(AbstractBlock.Settings.copy(baseBlock).burnable(), WoodType.OAK));
+		return register(name, () -> new FenceGateBlock(WoodType.OAK, AbstractBlock.Settings.copy(baseBlock).burnable()));
 	}
 
 	private static RegistryObject<Block> woodPressurePlate(String name, Block baseBlock) {
-		return register(name, () -> new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-				AbstractBlock.Settings.copy(baseBlock).burnable(), BlockSetType.OAK));
+		return register(name, () -> new PressurePlateBlock(BlockSetType.OAK,
+				AbstractBlock.Settings.copy(baseBlock).burnable()));
 	}
 
 	private static RegistryObject<Block> woodButton(String name, Block baseBlock) {
-		return register(name, () -> new ButtonBlock(AbstractBlock.Settings.copy(baseBlock).burnable(), BlockSetType.OAK, 30, true));
+		return register(name, () -> new ButtonBlock(BlockSetType.OAK, 30, AbstractBlock.Settings.copy(baseBlock).burnable()));
 	}
 
 	private static RegistryObject<Block> pillar(String name, Block baseBlock) {

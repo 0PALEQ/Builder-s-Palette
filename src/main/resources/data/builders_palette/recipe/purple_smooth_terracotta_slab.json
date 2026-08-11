@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:purple_smooth_terracotta"
+    }
+  },
+  "result": {
+    "id": "builders_palette:purple_smooth_terracotta_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

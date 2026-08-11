@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:brick"
+    },
+    "b": {
+      "item": "minecraft:red_concrete_powder"
+    }
+  },
+  "result": {
+    "id": "builders_palette:red_3d_bricks",
+    "count": 1
+  },
+  "show_notification": true
+}

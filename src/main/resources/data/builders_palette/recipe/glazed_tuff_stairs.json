@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:glazed_tuff"
+    }
+  },
+  "result": {
+    "id": "builders_palette:glazed_tuff_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

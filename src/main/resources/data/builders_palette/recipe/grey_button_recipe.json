@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    {
+      "item": "builders_palette:grey_planks"
+    }
+  ],
+  "result": {
+    "id": "builders_palette:grey_button",
+    "count": 1
+  }
+}

@@ -4,7 +4,7 @@ package com.cookiecraftmods.builderspalette.block;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.sound.BlockSoundGroup;
@@ -14,7 +14,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class White3dBricksBlock extends Block {
 	public White3dBricksBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(Instrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
 	}
 	public boolean hasSidedTransparency(BlockState state) {
 		return true;

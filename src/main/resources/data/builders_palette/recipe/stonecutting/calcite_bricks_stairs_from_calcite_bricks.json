@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:calcite_bricks"},
+  "result": {"id": "builders_palette:calcite_bricks_stairs"},
+  "count": 1
+}

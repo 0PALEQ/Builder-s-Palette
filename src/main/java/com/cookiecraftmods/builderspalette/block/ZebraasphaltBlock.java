@@ -1,7 +1,7 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.state.property.DirectionProperty;
 import net.minecraft.state.StateManager;
 import net.minecraft.block.BlockState;
@@ -20,7 +20,7 @@ public class ZebraasphaltBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
 
 	public ZebraasphaltBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(Instrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f));
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f));
 		this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
 	}
 	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {

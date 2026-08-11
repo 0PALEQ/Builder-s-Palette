@@ -1,7 +1,7 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.Instrument;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.StairsBlock;
@@ -13,7 +13,7 @@ import net.minecraft.util.math.BlockPos;
 
 public class Dark_RedStairsBlock extends StairsBlock {
 	public Dark_RedStairsBlock() {
-		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().burnable().instrument(Instrument.BASS).sounds(BlockSoundGroup.WOOD).strength(3f, 2f));
+		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(3f, 2f));
 	}
 	public float getExplosionResistance() {
 		return 2f;

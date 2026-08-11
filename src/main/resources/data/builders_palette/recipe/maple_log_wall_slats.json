@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:maple_log"
+    }
+  },
+  "result": {
+    "id": "builders_palette:maple_log_wall_slats",
+    "count": 6
+  },
+  "show_notification": true
+}

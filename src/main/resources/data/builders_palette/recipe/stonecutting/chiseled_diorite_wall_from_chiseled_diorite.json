@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:chiseled_diorite"},
+  "result": {"id": "builders_palette:chiseled_diorite_wall"},
+  "count": 1
+}

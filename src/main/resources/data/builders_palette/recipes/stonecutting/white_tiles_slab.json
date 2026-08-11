@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:white_tiles"
-  },
-  "result": "builders_palette:white_tiles_slab",
-  "count": 2
-}
