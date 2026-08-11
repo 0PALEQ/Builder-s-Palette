@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:end_stone"
+  },
+  "result": {"id": "builders_palette:end_stone_stairs", "count": 1}
+}

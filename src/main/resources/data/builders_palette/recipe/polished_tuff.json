@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "result": {"id": "builders_palette:polished_tuff",
+    "count": 4
+  },
+  "show_notification": true
+}

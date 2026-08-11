@@ -12,26 +12,28 @@ import java.util.function.Supplier;
  * while delegating registration to Forge's deferred registries.
  */
 public final class RegistryObject<T> implements Supplier<T> {
-    private final net.minecraftforge.registries.RegistryObject<? extends T> delegate;
+    private final Supplier<? extends T> delegate;
+    private final ResourceLocation id;
 
-    private RegistryObject(net.minecraftforge.registries.RegistryObject<? extends T> delegate) {
+    private RegistryObject(Supplier<? extends T> delegate, ResourceLocation id) {
         this.delegate = delegate;
+        this.id = id;
     }
 
     @SuppressWarnings({"unchecked", "rawtypes"})
     public static <T> RegistryObject<T> register(Registry<? super T> registry, String name,
             Supplier<? extends T> supplier) {
-        net.minecraftforge.registries.RegistryObject<? extends T> value;
+        Supplier<? extends T> value;
         if (registry == BuiltInRegistries.BLOCK) {
-            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.BLOCKS.register(name, (Supplier) supplier);
+            value = BuildersPaletteMod.BLOCKS.register(name, (Supplier) supplier);
         } else if (registry == BuiltInRegistries.ITEM) {
-            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.ITEMS.register(name, (Supplier) supplier);
+            value = BuildersPaletteMod.ITEMS.register(name, (Supplier) supplier);
         } else if (registry == BuiltInRegistries.CREATIVE_MODE_TAB) {
-            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.CREATIVE_TABS.register(name, (Supplier) supplier);
+            value = BuildersPaletteMod.CREATIVE_TABS.register(name, (Supplier) supplier);
         } else {
             throw new IllegalArgumentException("Unsupported registry for builders_palette:" + registry.key().location());
         }
-        return new RegistryObject<>(value);
+        return new RegistryObject<>(value, ResourceLocation.fromNamespaceAndPath(BuildersPaletteMod.MODID, name));
     }
 
     @Override
@@ -40,6 +42,6 @@ public final class RegistryObject<T> implements Supplier<T> {
     }
 
     public ResourceLocation getId() {
-        return delegate.getId();
+        return id;
     }
 }

@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_andesite"},
-  "result": "builders_palette:polished_andesite_stairs",
-  "count": 1
-}

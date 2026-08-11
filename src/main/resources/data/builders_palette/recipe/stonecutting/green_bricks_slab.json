@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:green_bricks"
+  },
+  "result": {"id": "builders_palette:green_bricks_slab", "count": 2}
+}

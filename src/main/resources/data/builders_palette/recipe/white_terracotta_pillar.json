@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_terracotta"
+    }
+  },
+  "result": {"id": "builders_palette:white_terracotta_pillar",
+    "count": 2
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "builders_palette:purpleheart_log"
+    }
+  },
+  "result": {"id": "builders_palette:purpleheart_wood",
+    "count": 3
+  }
+}

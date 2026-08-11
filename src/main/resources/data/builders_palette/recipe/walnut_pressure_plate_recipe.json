@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "category": "redstone",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "builders_palette:walnut_planks"
+    }
+  },
+  "result": {"id": "builders_palette:walnut_pressure_plate",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:asphalt_block"
+  },
+  "result": {"id": "builders_palette:asphalt_stairs", "count": 1}
+}

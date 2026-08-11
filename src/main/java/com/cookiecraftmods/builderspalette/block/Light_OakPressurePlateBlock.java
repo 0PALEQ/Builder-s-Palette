@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Light_OakPressurePlateBlock extends PressurePlateBlock {
 	public Light_OakPressurePlateBlock() {
-		super(Sensitivity.EVERYTHING, BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn(), BlockSetType.OAK);
+		super(BlockSetType.OAK, BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;

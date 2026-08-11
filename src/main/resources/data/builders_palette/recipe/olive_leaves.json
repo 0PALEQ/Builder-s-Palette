@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "minecraft:jungle_leaves"
+    },
+    {
+      "item": "minecraft:green_dye"
+    }
+  ],
+  "result": {"id": "builders_palette:olive_leaves",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_leaves"
+}
+

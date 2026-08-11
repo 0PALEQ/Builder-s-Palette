@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:dark_grey_bricks"
+    }
+  },
+  "result": {"id": "builders_palette:dark_grey_bricks_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

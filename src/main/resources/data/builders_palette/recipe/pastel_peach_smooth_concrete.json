@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "#D#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete"
+    },
+    "D": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "result": {"id": "builders_palette:pastel_peach_smooth_concrete",
+    "count": 8
+  },
+  "show_notification": true
+}

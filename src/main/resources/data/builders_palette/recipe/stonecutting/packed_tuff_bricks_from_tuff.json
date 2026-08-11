@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "minecraft:tuff"},
+  "result": {"id": "builders_palette:packed_tuff_bricks", "count": 1}
+}

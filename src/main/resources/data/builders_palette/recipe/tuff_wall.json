@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:tuff"
+    }
+  },
+  "result": {"id": "builders_palette:tuff_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "category": "building",
+  "pattern": [
+    "aa",
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "builders_palette:cedar_log"
+    }
+  },
+  "result": {"id": "builders_palette:cedar_wood",
+    "count": 3
+  }
+}

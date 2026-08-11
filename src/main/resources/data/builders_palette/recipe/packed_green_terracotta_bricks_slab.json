@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["###"],
+  "key": {"#": {"item": "builders_palette:packed_green_terracotta_bricks"}},
+  "result": {"id": "builders_palette:packed_green_terracotta_bricks_slab", "count": 6}
+}

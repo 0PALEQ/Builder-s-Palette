@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:polished_andesite"
-  },
-  "result": "builders_palette:chiseled_andesite",
-  "count": 1
-}

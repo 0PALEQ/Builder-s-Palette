@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "builders_palette:dark_red_wood"
+    }
+  ],
+  "result": {"id": "builders_palette:dark_red_planks",
+    "count": 4
+  }
+}

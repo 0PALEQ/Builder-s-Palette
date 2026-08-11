@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:pink_smooth_terracotta"
+    }
+  },
+  "result": {"id": "builders_palette:pink_smooth_terracotta_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

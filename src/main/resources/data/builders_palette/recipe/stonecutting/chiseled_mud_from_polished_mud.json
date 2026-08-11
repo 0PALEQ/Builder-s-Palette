@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:polished_mud"
+  },
+  "result": {"id": "builders_palette:chiseled_mud", "count": 1}
+}

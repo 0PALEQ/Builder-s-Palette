@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:glazed_mud"
+    }
+  },
+  "result": {"id": "builders_palette:glazed_mud_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

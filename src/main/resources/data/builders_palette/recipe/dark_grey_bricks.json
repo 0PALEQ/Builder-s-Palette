@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "builders_palette:bricks"
+    },
+    {
+      "item": "minecraft:black_dye"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
+  ],
+  "result": {"id": "builders_palette:dark_grey_bricks",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_recolor"
+}

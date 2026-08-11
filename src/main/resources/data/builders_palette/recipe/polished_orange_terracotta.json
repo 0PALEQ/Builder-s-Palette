@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:orange_terracotta"
+    }
+  },
+  "result": {"id": "builders_palette:polished_orange_terracotta",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:packed_green_terracotta_bricks"},
-  "result": "builders_palette:packed_green_terracotta_bricks_stairs",
-  "count": 1
-}

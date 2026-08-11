@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:purple_terracotta"
+    }
+  },
+  "result": {"id": "builders_palette:polished_purple_terracotta",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:calcite"
+    }
+  },
+  "result": {"id": "builders_palette:calcite_pillar",
+    "count": 2
+  },
+  "show_notification": true
+}

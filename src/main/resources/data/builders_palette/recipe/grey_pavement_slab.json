@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:grey_pavement"
+    }
+  },
+  "result": {"id": "builders_palette:grey_pavement_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

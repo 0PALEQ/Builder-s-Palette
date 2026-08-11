@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:white_concrete"
+    }
+  },
+  "result": {"id": "builders_palette:white_tiles",
+    "count": 4
+  },
+  "show_notification": true
+}

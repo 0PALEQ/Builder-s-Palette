@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class Light_OakButtonBlock extends ButtonBlock {
 	public Light_OakButtonBlock() {
-		super(BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f), BlockSetType.OAK, 30, true);
+		super(BlockSetType.OAK, 30, BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;

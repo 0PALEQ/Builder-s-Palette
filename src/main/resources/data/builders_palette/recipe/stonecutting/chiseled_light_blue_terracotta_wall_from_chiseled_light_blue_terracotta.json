@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:chiseled_light_blue_terracotta"},
+  "result": {"id": "builders_palette:chiseled_light_blue_terracotta_wall", "count": 1}
+}

@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:polished_end_stone"},
+  "result": {"id": "builders_palette:polished_end_stone_slab", "count": 2}
+}

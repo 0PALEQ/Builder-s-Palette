@@ -87,9 +87,9 @@ public final class GeneratedPastelConcrete {
 		RegistryObject<Block> base = pillar
 				? register(name, () -> new RotatedPillarBlock(settings()))
 				: register(name, () -> new Block(settings()));
-		register(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(), BlockBehaviour.Properties.copy(base.get())));
-		register(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(base.get())));
-		register(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(base.get())));
+		register(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(base.get())));
+		register(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(base.get())));
+		register(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(base.get())));
 	}
 
 	private static BlockBehaviour.Properties settings() {
