@@ -1,32 +1,45 @@
 package com.cookiecraftmods.builderspalette.init;
 
 import com.cookiecraftmods.builderspalette.BuildersPaletteMod;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.function.Supplier;
 
-public final class RegistryObject<T> {
-	private final Identifier id;
-	private final T value;
+/**
+ * Small compatibility wrapper that keeps the generated catalog source stable
+ * while delegating registration to Forge's deferred registries.
+ */
+public final class RegistryObject<T> implements Supplier<T> {
+    private final net.minecraftforge.registries.RegistryObject<? extends T> delegate;
 
-	private RegistryObject(Identifier id, T value) {
-		this.id = id;
-		this.value = value;
-	}
+    private RegistryObject(net.minecraftforge.registries.RegistryObject<? extends T> delegate) {
+        this.delegate = delegate;
+    }
 
-	public static <T> RegistryObject<T> register(Registry<? super T> registry, String name, Supplier<? extends T> supplier) {
-		Identifier id = new Identifier(BuildersPaletteMod.MODID, name);
-		T value = supplier.get();
-		Registry.register(registry, id, value);
-		return new RegistryObject<>(id, value);
-	}
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    public static <T> RegistryObject<T> register(Registry<? super T> registry, String name,
+            Supplier<? extends T> supplier) {
+        net.minecraftforge.registries.RegistryObject<? extends T> value;
+        if (registry == BuiltInRegistries.BLOCK) {
+            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.BLOCKS.register(name, (Supplier) supplier);
+        } else if (registry == BuiltInRegistries.ITEM) {
+            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.ITEMS.register(name, (Supplier) supplier);
+        } else if (registry == BuiltInRegistries.CREATIVE_MODE_TAB) {
+            value = (net.minecraftforge.registries.RegistryObject) BuildersPaletteMod.CREATIVE_TABS.register(name, (Supplier) supplier);
+        } else {
+            throw new IllegalArgumentException("Unsupported registry for builders_palette:" + registry.key().location());
+        }
+        return new RegistryObject<>(value);
+    }
 
-	public T get() {
-		return value;
-	}
+    @Override
+    public T get() {
+        return delegate.get();
+    }
 
-	public Identifier getId() {
-		return id;
-	}
+    public ResourceLocation getId() {
+        return delegate.getId();
+    }
 }

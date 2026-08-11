@@ -1,22 +1,22 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.LeavesBlock;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
 public class Light_OakLeavesBlock extends LeavesBlock {
 	public Light_OakLeavesBlock() {
-		super(BuildersPaletteBlockProperties.of().burnable().sounds(BlockSoundGroup.GRASS).strength(0.2f).nonOpaque());
+		super(BuildersPaletteBlockProperties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion());
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 1;
 	}
-	public int getFlammability(BlockState state, BlockView world, BlockPos pos, Direction face) {
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 30;
 	}
 }

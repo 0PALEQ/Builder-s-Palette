@@ -2,11 +2,11 @@
 package com.cookiecraftmods.builderspalette.init;
 
 import com.cookiecraftmods.builderspalette.init.RegistryObject;
-import net.minecraft.registry.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 import java.util.function.Supplier;
 
 import com.cookiecraftmods.builderspalette.item.WhiteBrickItem;
@@ -18,7 +18,7 @@ public class BuildersPaletteModItems {
 	}
 
 	private static RegistryObject<Item> register(String name, Supplier<? extends Item> supplier) {
-		return RegistryObject.register(Registries.ITEM, name, supplier);
+		return RegistryObject.register(BuiltInRegistries.ITEM, name, supplier);
 	}
 
 	public static final RegistryObject<Item> BLACK_3D_BRICKS = block(BuildersPaletteModBlocks.BLACK_3D_BRICKS);
@@ -874,6 +874,6 @@ public class BuildersPaletteModItems {
 	public static final RegistryObject<Item> END_STONE_PILLAR = block(BuildersPaletteModBlocks.END_STONE_PILLAR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
-		return register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Settings()));
+		return register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
 	}
 }

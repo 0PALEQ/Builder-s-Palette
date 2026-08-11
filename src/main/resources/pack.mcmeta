@@ -1,6 +1,6 @@
 {
   "pack": {
-    "pack_format": 15,
-    "description": "Builder's Palette resources"
+    "description": "${mod_name} resources",
+    "pack_format": 15
   }
 }

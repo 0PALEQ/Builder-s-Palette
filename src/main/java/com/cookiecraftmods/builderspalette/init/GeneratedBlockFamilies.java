@@ -1,15 +1,15 @@
 package com.cookiecraftmods.builderspalette.init;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.registry.Registries;
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,44 +49,44 @@ public final class GeneratedBlockFamilies {
 		itemsRegistered = true;
 
 		for (RegistryObject<Block> block : BLOCKS) {
-			RegistryObject.register(Registries.ITEM, block.getId().getPath(),
-					() -> new BlockItem(block.get(), new Item.Settings()));
+			RegistryObject.register(BuiltInRegistries.ITEM, block.getId().getPath(),
+					() -> new BlockItem(block.get(), new Item.Properties()));
 		}
 	}
 
-	public static void addToTab(ItemGroup.Entries entries) {
+	public static void addToTab(CreativeModeTab.Output entries) {
 		for (RegistryObject<Block> block : BLOCKS) {
-			entries.add(block.get().asItem());
+			entries.accept(block.get().asItem());
 		}
 	}
 
 	private static void registerFamily(String name, float hardness, float resistance,
-			BlockSoundGroup sound, boolean requiresTool, boolean stairs, boolean slab, boolean wall) {
+			SoundType sound, boolean requiresTool, boolean stairs, boolean slab, boolean wall) {
 		RegistryObject<Block> base = register(name,
 				() -> new Block(settings(hardness, resistance, sound, requiresTool)));
 
 		if (stairs) {
-			register(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(),
-					AbstractBlock.Settings.copy(base.get())));
+			register(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(),
+					BlockBehaviour.Properties.copy(base.get())));
 		}
 		if (slab) {
-			register(name + "_slab", () -> new SlabBlock(AbstractBlock.Settings.copy(base.get())));
+			register(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(base.get())));
 		}
 		if (wall) {
-			register(name + "_wall", () -> new WallBlock(AbstractBlock.Settings.copy(base.get())));
+			register(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(base.get())));
 		}
 	}
 
-	private static AbstractBlock.Settings settings(float hardness, float resistance,
-			BlockSoundGroup sound, boolean requiresTool) {
-		AbstractBlock.Settings settings = AbstractBlock.Settings.create()
-				.sounds(sound)
+	private static BlockBehaviour.Properties settings(float hardness, float resistance,
+			SoundType sound, boolean requiresTool) {
+		BlockBehaviour.Properties settings = BlockBehaviour.Properties.of()
+				.sound(sound)
 				.strength(hardness, resistance);
-		return requiresTool ? settings.requiresTool() : settings;
+		return requiresTool ? settings.requiresCorrectToolForDrops() : settings;
 	}
 
 	private static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {
-		RegistryObject<Block> block = RegistryObject.register(Registries.BLOCK, name, supplier);
+		RegistryObject<Block> block = RegistryObject.register(BuiltInRegistries.BLOCK, name, supplier);
 		BLOCKS.add(block);
 		return block;
 	}

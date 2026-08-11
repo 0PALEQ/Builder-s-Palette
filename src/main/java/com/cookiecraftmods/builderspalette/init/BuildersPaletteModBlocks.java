@@ -2,23 +2,23 @@
 package com.cookiecraftmods.builderspalette.init;
 
 import com.cookiecraftmods.builderspalette.init.RegistryObject;
-import net.minecraft.registry.Registries;
+import net.minecraft.core.registries.BuiltInRegistries;
 import java.util.function.Supplier;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockSetType;
-import net.minecraft.block.ButtonBlock;
-import net.minecraft.block.FenceBlock;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.block.LeavesBlock;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.PressurePlateBlock;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.block.WoodType;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ButtonBlock;
+import net.minecraft.world.level.block.FenceBlock;
+import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.PressurePlateBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 import com.cookiecraftmods.builderspalette.block.ZebraasphaltBlock;
 import com.cookiecraftmods.builderspalette.block.YieldAsphaltBlock;
@@ -223,7 +223,7 @@ public class BuildersPaletteModBlocks {
 	}
 
 	private static RegistryObject<Block> register(String name, Supplier<? extends Block> supplier) {
-		return RegistryObject.register(Registries.BLOCK, name, supplier);
+		return RegistryObject.register(BuiltInRegistries.BLOCK, name, supplier);
 	}
 
 	public static final RegistryObject<Block> BLACK_3D_BRICKS = register("black_3d_bricks", () -> new Black3dBricksBlock());
@@ -1077,63 +1077,63 @@ public class BuildersPaletteModBlocks {
 	public static final RegistryObject<Block> END_STONE_PILLAR = pillar("end_stone_pillar", Blocks.END_STONE);
 
 	private static RegistryObject<Block> simpleBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new Block(BlockBehaviour.Properties.copy(baseBlock)));
 	}
 
 	private static RegistryObject<Block> woodBlock(String name, Block baseBlock) {
-		return register(name, () -> new Block(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new Block(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava()));
 	}
 
 	private static RegistryObject<Block> woodPillar(String name, Block baseBlock) {
-		return register(name, () -> new PillarBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava()));
 	}
 
 	private static RegistryObject<Block> woodLeaves(String name, Block baseBlock) {
-		return register(name, () -> new LeavesBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new LeavesBlock(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava()));
 	}
 
 	private static RegistryObject<Block> woodFence(String name, Block baseBlock) {
-		return register(name, () -> new FenceBlock(AbstractBlock.Settings.copy(baseBlock).burnable()));
+		return register(name, () -> new FenceBlock(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava()));
 	}
 
 	private static RegistryObject<Block> woodFenceGate(String name, Block baseBlock) {
-		return register(name, () -> new FenceGateBlock(AbstractBlock.Settings.copy(baseBlock).burnable(), WoodType.OAK));
+		return register(name, () -> new FenceGateBlock(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava(), WoodType.OAK));
 	}
 
 	private static RegistryObject<Block> woodPressurePlate(String name, Block baseBlock) {
-		return register(name, () -> new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
-				AbstractBlock.Settings.copy(baseBlock).burnable(), BlockSetType.OAK));
+		return register(name, () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+				BlockBehaviour.Properties.copy(baseBlock).ignitedByLava(), BlockSetType.OAK));
 	}
 
 	private static RegistryObject<Block> woodButton(String name, Block baseBlock) {
-		return register(name, () -> new ButtonBlock(AbstractBlock.Settings.copy(baseBlock).burnable(), BlockSetType.OAK, 30, true));
+		return register(name, () -> new ButtonBlock(BlockBehaviour.Properties.copy(baseBlock).ignitedByLava(), BlockSetType.OAK, 30, true));
 	}
 
 	private static RegistryObject<Block> pillar(String name, Block baseBlock) {
-		return register(name, () -> new PillarBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new RotatedPillarBlock(BlockBehaviour.Properties.copy(baseBlock)));
 	}
 
 	private static RegistryObject<Block> stairs(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new StairsBlock(baseBlock.get().getDefaultState(), AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new StairBlock(baseBlock.get().defaultBlockState(), BlockBehaviour.Properties.copy(baseBlock.get())));
 	}
 
 	private static RegistryObject<Block> stairs(String name, Block baseBlock) {
-		return register(name, () -> new StairsBlock(baseBlock.getDefaultState(), AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new StairBlock(baseBlock.defaultBlockState(), BlockBehaviour.Properties.copy(baseBlock)));
 	}
 
 	private static RegistryObject<Block> slab(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new SlabBlock(AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new SlabBlock(BlockBehaviour.Properties.copy(baseBlock.get())));
 	}
 
 	private static RegistryObject<Block> slab(String name, Block baseBlock) {
-		return register(name, () -> new SlabBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new SlabBlock(BlockBehaviour.Properties.copy(baseBlock)));
 	}
 
 	private static RegistryObject<Block> wall(String name, RegistryObject<Block> baseBlock) {
-		return register(name, () -> new WallBlock(AbstractBlock.Settings.copy(baseBlock.get())));
+		return register(name, () -> new WallBlock(BlockBehaviour.Properties.copy(baseBlock.get())));
 	}
 
 	private static RegistryObject<Block> wall(String name, Block baseBlock) {
-		return register(name, () -> new WallBlock(AbstractBlock.Settings.copy(baseBlock)));
+		return register(name, () -> new WallBlock(BlockBehaviour.Properties.copy(baseBlock)));
 	}
 }

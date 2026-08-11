@@ -206,17 +206,17 @@ def generated_java(families: list[tuple[str, bool]]) -> bytes:
     )
     source = f'''package com.cookiecraftmods.builderspalette.init;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.PillarBlock;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.registry.Registries;
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.level.block.SoundType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -241,30 +241,30 @@ public final class GeneratedPastelConcrete {{
 \t\tif (!blocksRegistered) throw new IllegalStateException("Pastel concrete blocks must be registered before their items");
 \t\titemsRegistered = true;
 \t\tfor (RegistryObject<Block> block : BLOCKS) {{
-\t\t\tRegistryObject.register(Registries.ITEM, block.getId().getPath(),
-\t\t\t\t\t() -> new BlockItem(block.get(), new Item.Settings()));
+\t\t\tRegistryObject.register(BuiltInRegistries.ITEM, block.getId().getPath(),
+\t\t\t\t\t() -> new BlockItem(block.get(), new Item.Properties()));
 \t\t}}
 \t}}
 
-\tpublic static void addToTab(ItemGroup.Entries entries) {{
-\t\tfor (RegistryObject<Block> block : BLOCKS) entries.add(block.get().asItem());
+\tpublic static void addToTab(CreativeModeTab.Output entries) {{
+\t\tfor (RegistryObject<Block> block : BLOCKS) entries.accept(block.get().asItem());
 \t}}
 
 \tprivate static void registerFamily(String name, boolean pillar) {{
 \t\tRegistryObject<Block> base = pillar
-\t\t\t\t? register(name, () -> new PillarBlock(settings()))
+\t\t\t\t? register(name, () -> new RotatedPillarBlock(settings()))
 \t\t\t\t: register(name, () -> new Block(settings()));
-\t\tregister(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(), AbstractBlock.Settings.copy(base.get())));
-\t\tregister(name + "_slab", () -> new SlabBlock(AbstractBlock.Settings.copy(base.get())));
-\t\tregister(name + "_wall", () -> new WallBlock(AbstractBlock.Settings.copy(base.get())));
+\t\tregister(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(), BlockBehaviour.Properties.copy(base.get())));
+\t\tregister(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(base.get())));
+\t\tregister(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(base.get())));
 \t}}
 
-\tprivate static AbstractBlock.Settings settings() {{
-\t\treturn AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).strength(1.8f, 6.0f).requiresTool();
+\tprivate static BlockBehaviour.Properties settings() {{
+\t\treturn BlockBehaviour.Properties.of().sound(SoundType.STONE).strength(1.8f, 6.0f).requiresCorrectToolForDrops();
 \t}}
 
 \tprivate static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {{
-\t\tRegistryObject<Block> block = RegistryObject.register(Registries.BLOCK, name, supplier);
+\t\tRegistryObject<Block> block = RegistryObject.register(BuiltInRegistries.BLOCK, name, supplier);
 \t\tBLOCKS.add(block);
 \t\treturn block;
 \t}}
