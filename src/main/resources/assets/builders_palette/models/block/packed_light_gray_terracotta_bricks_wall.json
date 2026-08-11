@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "builders_palette:block/packed_light_gray_terracotta_bricks",
+    "particle": "builders_palette:block/packed_light_gray_terracotta_bricks"
+  }
+}

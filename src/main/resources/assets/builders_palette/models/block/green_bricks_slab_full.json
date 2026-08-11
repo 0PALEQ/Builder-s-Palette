@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/greenbricks",
+    "bottom": "builders_palette:block/greenbricks",
+    "top": "builders_palette:block/greenbricks",
+    "side": "builders_palette:block/greenbricks"
+  },
+  "render_type": "solid"
+}

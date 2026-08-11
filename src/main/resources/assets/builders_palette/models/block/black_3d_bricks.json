@@ -1,0 +1,10 @@
+{
+  "parent": "builders_palette:custom/black3d_bricks",
+  "textures": {
+    "all": "builders_palette:block/black3dbricks",
+    "particle": "builders_palette:block/black3dbricks",
+    "0": "builders_palette:block/white3dbricks",
+    "1": "builders_palette:block/black3dbricks"
+  },
+  "render_type": "solid"
+}

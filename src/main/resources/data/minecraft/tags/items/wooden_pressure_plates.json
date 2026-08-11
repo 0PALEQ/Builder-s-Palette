@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_pressure_plate",
+    "builders_palette:cedar_pressure_plate",
+    "builders_palette:walnut_pressure_plate",
+    "builders_palette:olive_pressure_plate",
+    "builders_palette:purpleheart_pressure_plate"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/polished_brown_terracotta",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [{"condition": "minecraft:survives_explosion"}],
+      "entries": [{"type": "minecraft:item", "name": "builders_palette:polished_brown_terracotta"}]
+    }
+  ]
+}

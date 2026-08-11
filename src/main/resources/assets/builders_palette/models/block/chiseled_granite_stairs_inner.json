@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_granite",
+    "bottom": "builders_palette:block/chiseled_granite",
+    "top": "builders_palette:block/chiseled_granite",
+    "side": "builders_palette:block/chiseled_granite"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/polished_end_stone",
+    "bottom": "builders_palette:block/polished_end_stone",
+    "top": "builders_palette:block/polished_end_stone",
+    "side": "builders_palette:block/polished_end_stone"
+  },
+  "render_type": "solid"
+}

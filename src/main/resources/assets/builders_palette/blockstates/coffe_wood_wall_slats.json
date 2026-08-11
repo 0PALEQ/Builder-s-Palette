@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "builders_palette:block/coffe_wood_wall_slats"
+    },
+    "facing=east": {
+      "model": "builders_palette:block/coffe_wood_wall_slats",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "builders_palette:block/coffe_wood_wall_slats",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "builders_palette:block/coffe_wood_wall_slats",
+      "y": 270
+    }
+  }
+}

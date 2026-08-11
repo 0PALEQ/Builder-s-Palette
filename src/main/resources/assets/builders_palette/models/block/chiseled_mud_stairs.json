@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_mud",
+    "bottom": "builders_palette:block/chiseled_mud",
+    "top": "builders_palette:block/chiseled_mud",
+    "side": "builders_palette:block/chiseled_mud"
+  },
+  "render_type": "solid"
+}

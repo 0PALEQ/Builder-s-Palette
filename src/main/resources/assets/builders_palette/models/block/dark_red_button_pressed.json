@@ -1,0 +1,8 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "particle": "builders_palette:block/smooth-farmhouse-wood",
+    "texture": "builders_palette:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

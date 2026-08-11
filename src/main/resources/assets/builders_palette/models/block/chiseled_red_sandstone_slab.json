@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "minecraft:block/chiseled_red_sandstone",
+    "bottom": "minecraft:block/chiseled_red_sandstone",
+    "top": "minecraft:block/chiseled_red_sandstone",
+    "side": "minecraft:block/chiseled_red_sandstone"
+  },
+  "render_type": "solid"
+}

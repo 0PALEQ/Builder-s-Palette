@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "type":  "minecraft:model",
+                  "model":  "builders_palette:item/green_smooth_terracotta_stairs"
+              }
+}

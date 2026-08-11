@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "builders_palette:block/blackwhitetiles",
+    "bottom": "builders_palette:block/blackwhitetiles",
+    "top": "builders_palette:block/blackwhitetiles",
+    "side": "builders_palette:block/blackwhitetiles"
+  },
+  "render_type": "solid"
+}

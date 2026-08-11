@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "type":  "minecraft:model",
+                  "model":  "builders_palette:item/cracked_bricks_wall"
+              }
+}

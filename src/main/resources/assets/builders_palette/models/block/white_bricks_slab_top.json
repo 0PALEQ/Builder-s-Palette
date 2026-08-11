@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "particle": "builders_palette:block/whitebricks",
+    "bottom": "builders_palette:block/whitebricks",
+    "top": "builders_palette:block/whitebricks",
+    "side": "builders_palette:block/whitebricks"
+  },
+  "render_type": "solid"
+}

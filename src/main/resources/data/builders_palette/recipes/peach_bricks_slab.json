@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:peach_bricks"
+    }
+  },
+  "result": {
+    "item": "builders_palette:peach_bricks_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

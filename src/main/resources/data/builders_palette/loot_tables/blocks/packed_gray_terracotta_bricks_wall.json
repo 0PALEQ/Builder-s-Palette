@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/packed_gray_terracotta_bricks_wall",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{"type": "minecraft:item", "name": "builders_palette:packed_gray_terracotta_bricks_wall"}]
+  }]
+}

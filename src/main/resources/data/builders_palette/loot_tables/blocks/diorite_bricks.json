@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/diorite_bricks",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{"type": "minecraft:item", "name": "builders_palette:diorite_bricks"}]
+  }]
+}

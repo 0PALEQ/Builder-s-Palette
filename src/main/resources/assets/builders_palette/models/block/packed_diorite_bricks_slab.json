@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "particle": "builders_palette:block/packed_diorite_bricks",
+    "bottom": "builders_palette:block/packed_diorite_bricks",
+    "top": "builders_palette:block/packed_diorite_bricks",
+    "side": "builders_palette:block/packed_diorite_bricks"
+  }
+}

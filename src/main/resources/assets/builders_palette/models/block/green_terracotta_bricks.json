@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/green_terracotta_bricks"
+  }
+}

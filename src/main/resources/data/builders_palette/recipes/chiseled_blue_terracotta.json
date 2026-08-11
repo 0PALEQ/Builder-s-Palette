@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:polished_blue_terracotta_slab"
+    }
+  },
+  "result": {
+    "item": "builders_palette:chiseled_blue_terracotta",
+    "count": 1
+  },
+  "show_notification": true
+}

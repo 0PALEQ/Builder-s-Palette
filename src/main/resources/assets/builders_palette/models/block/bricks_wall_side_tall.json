@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "builders_palette:block/new_bricks",
+    "particle": "builders_palette:block/new_bricks"
+  },
+  "render_type": "solid"
+}

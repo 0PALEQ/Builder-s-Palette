@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["###", "###"],
+  "key": {"#": {"item": "builders_palette:andesite_bricks"}},
+  "result": {"item": "builders_palette:andesite_bricks_wall", "count": 6}
+}

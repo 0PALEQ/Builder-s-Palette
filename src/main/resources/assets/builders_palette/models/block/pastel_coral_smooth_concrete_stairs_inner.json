@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/pastel_coral_smooth_concrete",
+    "bottom": "builders_palette:block/pastel_coral_smooth_concrete",
+    "top": "builders_palette:block/pastel_coral_smooth_concrete",
+    "side": "builders_palette:block/pastel_coral_smooth_concrete"
+  },
+  "render_type": "solid"
+}

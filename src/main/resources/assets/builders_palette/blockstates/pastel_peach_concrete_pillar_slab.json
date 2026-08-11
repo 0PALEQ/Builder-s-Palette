@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "builders_palette:block/pastel_peach_concrete_pillar_slab"
+    },
+    "type=top": {
+      "model": "builders_palette:block/pastel_peach_concrete_pillar_slab_top"
+    },
+    "type=double": {
+      "model": "builders_palette:block/pastel_peach_concrete_pillar_slab_full"
+    }
+  }
+}

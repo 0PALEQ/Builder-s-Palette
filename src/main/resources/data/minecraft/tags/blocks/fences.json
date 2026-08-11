@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:wenge_fence",
+    "builders_palette:white_fence",
+    "builders_palette:grey_fence",
+    "builders_palette:dark_red_fence",
+    "builders_palette:light_oak_fence",
+    "builders_palette:maple_fence",
+    "builders_palette:cedar_fence",
+    "builders_palette:walnut_fence",
+    "builders_palette:olive_fence",
+    "builders_palette:purpleheart_fence"
+  ]
+}

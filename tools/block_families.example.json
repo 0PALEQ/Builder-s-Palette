@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "families": [
+    {
+      "id": "blue_marble",
+      "display_name": "Blue Marble",
+      "texture": "input_textures/blue_marble.png",
+      "variants": ["block", "stairs", "slab", "wall"],
+      "sound": "STONE",
+      "hardness": 1.5,
+      "resistance": 6.0,
+      "requires_tool": true,
+      "tool": "pickaxe",
+      "render_type": "solid"
+    }
+  ]
+}

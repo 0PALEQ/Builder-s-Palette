@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/deep_blue_tiles",
+    "particle": "builders_palette:block/deep_blue_tiles"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/granite_bricks_stairs",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{"type": "minecraft:item", "name": "builders_palette:granite_bricks_stairs"}]
+  }]
+}

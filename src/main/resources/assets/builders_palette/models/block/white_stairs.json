@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/white_planks",
+    "bottom": "builders_palette:block/white_planks",
+    "top": "builders_palette:block/white_planks",
+    "side": "builders_palette:block/white_planks"
+  },
+  "render_type": "solid"
+}

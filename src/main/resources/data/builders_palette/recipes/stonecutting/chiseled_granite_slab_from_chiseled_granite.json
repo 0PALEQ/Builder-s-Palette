@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:chiseled_granite"},
+  "result": "builders_palette:chiseled_granite_slab",
+  "count": 2
+}

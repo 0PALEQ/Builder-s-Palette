@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_tuff",
+    "bottom": "builders_palette:block/chiseled_tuff",
+    "top": "builders_palette:block/chiseled_tuff",
+    "side": "builders_palette:block/chiseled_tuff"
+  },
+  "render_type": "solid"
+}

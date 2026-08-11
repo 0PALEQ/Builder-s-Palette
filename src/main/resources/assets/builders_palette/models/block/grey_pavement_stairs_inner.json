@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/grey_pavement",
+    "bottom": "builders_palette:block/grey_pavement",
+    "top": "builders_palette:block/grey_pavement",
+    "side": "builders_palette:block/grey_pavement"
+  },
+  "render_type": "solid"
+}

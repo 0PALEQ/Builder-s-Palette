@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_gray_terracotta",
+    "bottom": "builders_palette:block/chiseled_gray_terracotta",
+    "top": "builders_palette:block/chiseled_gray_terracotta",
+    "side": "builders_palette:block/chiseled_gray_terracotta"
+  },
+  "render_type": "solid"
+}

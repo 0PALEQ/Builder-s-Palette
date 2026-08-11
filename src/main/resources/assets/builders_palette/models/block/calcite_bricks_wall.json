@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "builders_palette:block/calcite_bricks",
+    "particle": "builders_palette:block/calcite_bricks"
+  }
+}

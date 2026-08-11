@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "particle": "builders_palette:block/calcite_bricks",
+    "bottom": "builders_palette:block/calcite_bricks",
+    "top": "builders_palette:block/calcite_bricks",
+    "side": "builders_palette:block/calcite_bricks"
+  }
+}

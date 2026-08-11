@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:light_oak_log",
+    "builders_palette:dark_red_log",
+    "builders_palette:grey_log",
+    "builders_palette:white_log",
+    "builders_palette:wenge_log",
+    "builders_palette:maple_log",
+    "builders_palette:maple_wood",
+    "builders_palette:cedar_log",
+    "builders_palette:cedar_wood",
+    "builders_palette:walnut_log",
+    "builders_palette:walnut_wood",
+    "builders_palette:olive_log",
+    "builders_palette:olive_wood",
+    "builders_palette:purpleheart_log",
+    "builders_palette:purpleheart_wood"
+  ]
+}

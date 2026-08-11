@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_wall_side_tall",
+  "textures": {
+    "wall": "builders_palette:block/pastel_aqua_concrete_pillar_side",
+    "particle": "builders_palette:block/pastel_aqua_concrete_pillar_side"
+  },
+  "render_type": "solid"
+}

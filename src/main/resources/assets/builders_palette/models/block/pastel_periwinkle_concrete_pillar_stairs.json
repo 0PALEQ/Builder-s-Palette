@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/pastel_periwinkle_concrete_pillar_side",
+    "bottom": "builders_palette:block/pastel_periwinkle_concrete_pillar_top",
+    "top": "builders_palette:block/pastel_periwinkle_concrete_pillar_top",
+    "side": "builders_palette:block/pastel_periwinkle_concrete_pillar_side"
+  },
+  "render_type": "solid"
+}

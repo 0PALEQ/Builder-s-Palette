@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "builders_palette:block/dark_grey_bricks",
+    "up": "builders_palette:block/dark_grey_bricks",
+    "north": "builders_palette:block/dark_grey_bricks",
+    "east": "builders_palette:block/dark_grey_bricks",
+    "south": "builders_palette:block/dark_grey_bricks",
+    "west": "builders_palette:block/dark_grey_bricks",
+    "particle": "builders_palette:block/dark_grey_bricks"
+  },
+  "render_type": "solid"
+}

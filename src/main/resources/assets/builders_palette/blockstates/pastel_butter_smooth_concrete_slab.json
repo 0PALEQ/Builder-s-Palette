@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "builders_palette:block/pastel_butter_smooth_concrete_slab"
+    },
+    "type=top": {
+      "model": "builders_palette:block/pastel_butter_smooth_concrete_slab_top"
+    },
+    "type=double": {
+      "model": "builders_palette:block/pastel_butter_smooth_concrete_slab_full"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": ["##", "##"],
+  "key": {"#": {"item": "minecraft:pink_terracotta"}},
+  "result": {"item": "builders_palette:packed_pink_terracotta_bricks", "count": 4}
+}

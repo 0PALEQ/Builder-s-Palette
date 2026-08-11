@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/olive_log_wall_slats",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:olive_log_wall_slats"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

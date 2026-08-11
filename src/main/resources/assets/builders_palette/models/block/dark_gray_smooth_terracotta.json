@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/dark_gray_smooth_terracotta",
+    "particle": "builders_palette:block/dark_gray_smooth_terracotta"
+  },
+  "render_type": "solid"
+}

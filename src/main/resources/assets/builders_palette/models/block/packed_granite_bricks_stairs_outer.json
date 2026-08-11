@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "particle": "builders_palette:block/packed_granite_bricks",
+    "bottom": "builders_palette:block/packed_granite_bricks",
+    "top": "builders_palette:block/packed_granite_bricks",
+    "side": "builders_palette:block/packed_granite_bricks"
+  }
+}

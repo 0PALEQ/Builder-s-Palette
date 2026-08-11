@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "builders_palette:block/greenbricks",
+    "particle": "builders_palette:block/greenbricks"
+  },
+  "render_type": "solid"
+}

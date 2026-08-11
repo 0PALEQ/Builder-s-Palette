@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "builders_palette:block/lightgraybricks",
+    "particle": "builders_palette:block/lightgraybricks"
+  },
+  "render_type": "solid"
+}

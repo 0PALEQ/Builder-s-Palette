@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/chiseled_white_terracotta_stairs",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [{"condition": "minecraft:survives_explosion"}],
+      "entries": [{"type": "minecraft:item", "name": "builders_palette:chiseled_white_terracotta_stairs"}]
+    }
+  ]
+}

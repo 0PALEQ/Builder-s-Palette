@@ -1,0 +1,10 @@
+{
+  "parent": "builders_palette:custom/lamel",
+  "textures": {
+    "all": "builders_palette:block/base",
+    "particle": "builders_palette:block/base",
+    "0": "builders_palette:block/base",
+    "1": "builders_palette:block/coffeplanks32x32"
+  },
+  "render_type": "solid"
+}

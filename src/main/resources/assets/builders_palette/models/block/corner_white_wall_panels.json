@@ -1,0 +1,9 @@
+{
+  "parent": "builders_palette:custom/corner_white_wall_pannels",
+  "textures": {
+    "all": "builders_palette:block/white_wall_pannels",
+    "particle": "builders_palette:block/white_wall_pannels",
+    "0": "builders_palette:block/white_wall_pannels"
+  },
+  "render_type": "solid"
+}

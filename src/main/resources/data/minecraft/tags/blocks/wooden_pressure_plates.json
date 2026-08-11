@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:wenge_pressure_plate",
+    "builders_palette:light_oak_pressure_plate",
+    "builders_palette:white_pressure_plate",
+    "builders_palette:dark_red_pressure_plate",
+    "builders_palette:grey_pressure_plate",
+    "builders_palette:maple_pressure_plate",
+    "builders_palette:cedar_pressure_plate",
+    "builders_palette:walnut_pressure_plate",
+    "builders_palette:olive_pressure_plate",
+    "builders_palette:purpleheart_pressure_plate"
+  ]
+}

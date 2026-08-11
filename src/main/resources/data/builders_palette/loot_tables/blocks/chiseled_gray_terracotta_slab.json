@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/chiseled_gray_terracotta_slab",
+  "pools": [{
+    "rolls": 1.0,
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "builders_palette:chiseled_gray_terracotta_slab",
+      "functions": [{
+        "conditions": [{"condition": "minecraft:block_state_property", "block": "builders_palette:chiseled_gray_terracotta_slab", "properties": {"type": "double"}}],
+        "count": 2.0,
+        "function": "minecraft:set_count"
+      }, {"function": "minecraft:explosion_decay"}]
+    }]
+  }]
+}

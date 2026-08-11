@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/glazed_tuff",
+    "bottom": "builders_palette:block/glazed_tuff",
+    "top": "builders_palette:block/glazed_tuff",
+    "side": "builders_palette:block/glazed_tuff"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_slab",
+    "builders_palette:cedar_slab",
+    "builders_palette:walnut_slab",
+    "builders_palette:olive_slab",
+    "builders_palette:purpleheart_slab"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "builders_palette:block/red_pavement",
+    "bottom": "builders_palette:block/red_pavement",
+    "top": "builders_palette:block/red_pavement",
+    "side": "builders_palette:block/red_pavement"
+  },
+  "render_type": "solid"
+}

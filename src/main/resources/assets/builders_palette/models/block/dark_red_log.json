@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "builders_palette:block/dark_red_log_top",
+    "up": "builders_palette:block/dark_red_log_top",
+    "north": "builders_palette:block/dark_red_log_side",
+    "east": "builders_palette:block/dark_red_log_side",
+    "south": "builders_palette:block/dark_red_log_side",
+    "west": "builders_palette:block/dark_red_log_side",
+    "particle": "builders_palette:block/dark_red_log_top"
+  },
+  "render_type": "solid"
+}

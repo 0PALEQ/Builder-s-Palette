@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/light_brown_bricks",
+    "bottom": "builders_palette:block/light_brown_bricks",
+    "top": "builders_palette:block/light_brown_bricks",
+    "side": "builders_palette:block/light_brown_bricks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "builders_palette:dashed_line_asphalt"
+    },
+    {
+      "item": "minecraft:white_concrete"
+    }
+  ],
+  "result": {
+    "item": "builders_palette:wide_dashed_lined_asphalt",
+    "count": 1
+  },
+  "show_notification": true
+}

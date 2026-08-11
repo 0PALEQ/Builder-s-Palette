@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/pastel_lavender_concrete_pillar",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:pastel_lavender_concrete_pillar"
+        }
+      ]
+    }
+  ]
+}

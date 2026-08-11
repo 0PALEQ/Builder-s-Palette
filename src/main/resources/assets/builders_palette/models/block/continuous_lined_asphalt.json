@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/continuouslineashpalt",
+    "particle": "builders_palette:block/continuouslineashpalt"
+  },
+  "render_type": "solid"
+}

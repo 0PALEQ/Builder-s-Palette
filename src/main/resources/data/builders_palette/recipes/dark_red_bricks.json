@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "builders_palette:bricks"
+    },
+    {
+      "item": "minecraft:red_dye"
+    },
+    {
+      "item": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "item": "builders_palette:dark_red_bricks",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_recolor"
+}

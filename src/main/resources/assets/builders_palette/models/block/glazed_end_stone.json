@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/glazed_end_stone"
+  }
+}

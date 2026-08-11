@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "builders_palette:block/glazed_calcite",
+    "bottom": "builders_palette:block/glazed_calcite",
+    "top": "builders_palette:block/glazed_calcite",
+    "side": "builders_palette:block/glazed_calcite"
+  },
+  "render_type": "solid"
+}

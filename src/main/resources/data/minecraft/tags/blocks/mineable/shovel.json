@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:glazed_mud",
+    "builders_palette:glazed_mud_stairs",
+    "builders_palette:glazed_mud_slab",
+    "builders_palette:glazed_mud_wall",
+    "builders_palette:polished_mud",
+    "builders_palette:polished_mud_stairs",
+    "builders_palette:polished_mud_slab",
+    "builders_palette:polished_mud_wall",
+    "builders_palette:chiseled_mud",
+    "builders_palette:chiseled_mud_stairs",
+    "builders_palette:chiseled_mud_slab",
+    "builders_palette:chiseled_mud_wall",
+    "builders_palette:mud_pillar"
+  ]
+}

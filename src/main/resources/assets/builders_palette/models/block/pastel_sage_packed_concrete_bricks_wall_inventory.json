@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "builders_palette:block/pastel_sage_packed_concrete_bricks",
+    "particle": "builders_palette:block/pastel_sage_packed_concrete_bricks"
+  },
+  "render_type": "solid"
+}

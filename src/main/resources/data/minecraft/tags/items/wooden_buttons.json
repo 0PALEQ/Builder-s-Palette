@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_button",
+    "builders_palette:cedar_button",
+    "builders_palette:walnut_button",
+    "builders_palette:olive_button",
+    "builders_palette:purpleheart_button"
+  ]
+}

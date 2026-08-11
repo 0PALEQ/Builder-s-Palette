@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/polished_yellow_terracotta",
+    "bottom": "builders_palette:block/polished_yellow_terracotta",
+    "top": "builders_palette:block/polished_yellow_terracotta",
+    "side": "builders_palette:block/polished_yellow_terracotta"
+  },
+  "render_type": "solid"
+}

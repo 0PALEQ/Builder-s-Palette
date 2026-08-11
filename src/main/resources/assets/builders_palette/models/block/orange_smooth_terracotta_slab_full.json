@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/orange_smooth_terracotta",
+    "bottom": "builders_palette:block/orange_smooth_terracotta",
+    "top": "builders_palette:block/orange_smooth_terracotta",
+    "side": "builders_palette:block/orange_smooth_terracotta"
+  },
+  "render_type": "solid"
+}

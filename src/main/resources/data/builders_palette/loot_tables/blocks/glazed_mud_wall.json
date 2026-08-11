@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/glazed_mud_wall",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:glazed_mud_wall"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_planks",
+    "builders_palette:cedar_planks",
+    "builders_palette:walnut_planks",
+    "builders_palette:olive_planks",
+    "builders_palette:purpleheart_planks"
+  ]
+}

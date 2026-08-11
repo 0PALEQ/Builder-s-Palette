@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/packed_blue_terracotta_bricks_slab",
+  "pools": [{
+    "rolls": 1,
+    "entries": [{
+      "type": "minecraft:item",
+      "name": "builders_palette:packed_blue_terracotta_bricks_slab",
+      "functions": [{
+        "function": "minecraft:set_count",
+        "conditions": [{"condition": "minecraft:block_state_property", "block": "builders_palette:packed_blue_terracotta_bricks_slab", "properties": {"type": "double"}}],
+        "count": 2,
+        "add": false
+      }]
+    }]
+  }]
+}

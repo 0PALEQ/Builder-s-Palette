@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "builders_palette:block/glazed_diorite",
+    "bottom": "builders_palette:block/glazed_diorite",
+    "top": "builders_palette:block/glazed_diorite",
+    "side": "builders_palette:block/glazed_diorite"
+  },
+  "render_type": "solid"
+}

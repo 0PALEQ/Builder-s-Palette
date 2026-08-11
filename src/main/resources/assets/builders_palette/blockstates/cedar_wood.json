@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "builders_palette:block/cedar_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "builders_palette:block/cedar_wood"
+    },
+    "axis=z": {
+      "model": "builders_palette:block/cedar_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:wenge_leaves",
+    "builders_palette:white_leaves",
+    "builders_palette:grey_leaves",
+    "builders_palette:dark_red_leaves",
+    "builders_palette:light_oak_leaves",
+    "builders_palette:maple_leaves",
+    "builders_palette:cedar_leaves",
+    "builders_palette:walnut_leaves",
+    "builders_palette:olive_leaves",
+    "builders_palette:purpleheart_leaves"
+  ]
+}

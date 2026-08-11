@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/yield_asphalt",
+    "particle": "builders_palette:block/yield_asphalt"
+  },
+  "render_type": "solid"
+}

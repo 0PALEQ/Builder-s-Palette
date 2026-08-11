@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:red_pavement"
+    }
+  },
+  "result": {
+    "item": "builders_palette:red_pavement_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

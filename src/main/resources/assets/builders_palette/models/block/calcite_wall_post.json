@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "minecraft:block/calcite",
+    "particle": "minecraft:block/calcite"
+  },
+  "render_type": "solid"
+}

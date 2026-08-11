@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "builders_palette:block/smooth-farmhouse-wood",
+    "particle": "builders_palette:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

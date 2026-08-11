@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": {"model": "builders_palette:block/diorite_bricks_slab"},
+    "type=top": {"model": "builders_palette:block/diorite_bricks_slab_top"},
+    "type=double": {"model": "builders_palette:block/diorite_bricks_slab_full"}
+  }
+}

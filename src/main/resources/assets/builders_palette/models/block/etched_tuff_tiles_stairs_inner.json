@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/etched_tuff_tiles",
+    "bottom": "builders_palette:block/etched_tuff_tiles",
+    "top": "builders_palette:block/etched_tuff_tiles",
+    "side": "builders_palette:block/etched_tuff_tiles"
+  },
+  "render_type": "solid"
+}

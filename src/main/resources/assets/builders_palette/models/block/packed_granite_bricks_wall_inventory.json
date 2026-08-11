@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "builders_palette:block/packed_granite_bricks",
+    "particle": "builders_palette:block/packed_granite_bricks"
+  }
+}

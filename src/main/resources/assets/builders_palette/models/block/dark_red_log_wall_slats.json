@@ -1,0 +1,10 @@
+{
+  "parent": "builders_palette:custom/wood_wall_slats",
+  "textures": {
+    "all": "builders_palette:block/dark_red_log_wall_slats_back",
+    "particle": "builders_palette:block/dark_red_log_wall_slats_back",
+    "0": "builders_palette:block/dark_red_log_wall_slats_back",
+    "1": "builders_palette:block/dark_red_log_side"
+  },
+  "render_type": "solid"
+}

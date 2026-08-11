@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "builders_palette:block/purpleheart_planks",
+    "particle": "builders_palette:block/purpleheart_planks"
+  },
+  "render_type": "solid"
+}

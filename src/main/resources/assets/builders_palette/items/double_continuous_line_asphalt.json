@@ -1,0 +1,6 @@
+{
+    "model":  {
+                  "type":  "minecraft:model",
+                  "model":  "builders_palette:item/double_continuous_line_asphalt"
+              }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:polished_granite"
+  },
+  "result": "builders_palette:chiseled_granite",
+  "count": 1
+}

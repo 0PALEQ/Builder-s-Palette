@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "builders_palette:block/spiral_tuff_tiles_slab"
+    },
+    "type=top": {
+      "model": "builders_palette:block/spiral_tuff_tiles_slab_top"
+    },
+    "type=double": {
+      "model": "builders_palette:block/spiral_tuff_tiles_slab_full"
+    }
+  }
+}

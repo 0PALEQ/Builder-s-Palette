@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/polished_terracotta",
+    "bottom": "builders_palette:block/polished_terracotta",
+    "top": "builders_palette:block/polished_terracotta",
+    "side": "builders_palette:block/polished_terracotta"
+  },
+  "render_type": "solid"
+}

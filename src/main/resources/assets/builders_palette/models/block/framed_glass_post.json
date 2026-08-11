@@ -1,0 +1,9 @@
+{
+  "parent": "block/template_glass_pane_post",
+  "textures": {
+    "particle": "builders_palette:block/glasspane",
+    "edge": "builders_palette:block/glasspane",
+    "pane": "builders_palette:block/glasspane"
+  },
+  "render_type": "translucent"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "builders_palette:block/polished_yellow_terracotta",
+    "particle": "builders_palette:block/polished_yellow_terracotta"
+  },
+  "render_type": "solid"
+}

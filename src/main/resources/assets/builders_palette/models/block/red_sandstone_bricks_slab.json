@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "particle": "builders_palette:block/red_sandstone_bricks",
+    "bottom": "builders_palette:block/red_sandstone_bricks",
+    "top": "builders_palette:block/red_sandstone_bricks",
+    "side": "builders_palette:block/red_sandstone_bricks"
+  }
+}

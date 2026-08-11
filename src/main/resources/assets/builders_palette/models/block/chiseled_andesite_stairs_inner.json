@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_andesite",
+    "bottom": "builders_palette:block/chiseled_andesite",
+    "top": "builders_palette:block/chiseled_andesite",
+    "side": "builders_palette:block/chiseled_andesite"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "builders_palette:block/whiteconcrete",
+    "up": "builders_palette:block/whiteconcrete",
+    "north": "builders_palette:block/vertical_pot",
+    "east": "builders_palette:block/whiteconcrete",
+    "south": "builders_palette:block/whiteconcrete",
+    "west": "builders_palette:block/whiteconcrete",
+    "particle": "builders_palette:block/whiteconcrete"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:pastel_aqua_smooth_concrete"
+    }
+  },
+  "result": {
+    "item": "builders_palette:pastel_aqua_smooth_concrete_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

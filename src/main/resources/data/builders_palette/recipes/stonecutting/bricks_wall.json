@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "builders_palette:bricks"
+  },
+  "result": "builders_palette:bricks_wall",
+  "count": 1
+}

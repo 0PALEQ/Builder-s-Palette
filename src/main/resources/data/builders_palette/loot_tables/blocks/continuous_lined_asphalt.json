@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/continuous_lined_asphalt",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:continuous_lined_asphalt"
+        }
+      ]
+    }
+  ]
+}

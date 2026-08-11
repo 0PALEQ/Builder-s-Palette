@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:woven_tuff_tiles"
+    }
+  },
+  "result": {
+    "item": "builders_palette:woven_tuff_tiles_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

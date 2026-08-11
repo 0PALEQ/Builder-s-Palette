@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:packed_diorite_bricks"},
+  "result": "builders_palette:packed_diorite_bricks_wall",
+  "count": 1
+}

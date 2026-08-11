@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "builders_palette:block/andesite_bricks",
+    "particle": "builders_palette:block/andesite_bricks"
+  }
+}

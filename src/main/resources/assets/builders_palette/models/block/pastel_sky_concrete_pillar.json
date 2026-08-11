@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "builders_palette:block/pastel_sky_concrete_pillar_top",
+    "side": "builders_palette:block/pastel_sky_concrete_pillar_side",
+    "particle": "builders_palette:block/pastel_sky_concrete_pillar_side"
+  },
+  "render_type": "solid"
+}

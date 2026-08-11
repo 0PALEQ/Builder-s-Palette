@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_stairs",
+    "builders_palette:cedar_stairs",
+    "builders_palette:walnut_stairs",
+    "builders_palette:olive_stairs",
+    "builders_palette:purpleheart_stairs"
+  ]
+}

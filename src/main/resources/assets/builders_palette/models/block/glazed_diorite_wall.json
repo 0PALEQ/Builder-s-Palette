@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "builders_palette:block/glazed_diorite",
+    "particle": "builders_palette:block/glazed_diorite"
+  },
+  "render_type": "solid"
+}

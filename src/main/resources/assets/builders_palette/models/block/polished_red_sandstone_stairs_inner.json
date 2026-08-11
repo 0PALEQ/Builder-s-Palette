@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/polished_red_sandstone",
+    "bottom": "builders_palette:block/polished_red_sandstone",
+    "top": "builders_palette:block/polished_red_sandstone",
+    "side": "builders_palette:block/polished_red_sandstone"
+  },
+  "render_type": "solid"
+}

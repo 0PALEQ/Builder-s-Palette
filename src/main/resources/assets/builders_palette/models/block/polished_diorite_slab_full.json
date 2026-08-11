@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/polished_diorite",
+    "bottom": "builders_palette:block/polished_diorite",
+    "top": "builders_palette:block/polished_diorite",
+    "side": "builders_palette:block/polished_diorite"
+  },
+  "render_type": "solid"
+}

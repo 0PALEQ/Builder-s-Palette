@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "minecraft:block/terracotta",
+    "bottom": "minecraft:block/terracotta",
+    "top": "minecraft:block/terracotta",
+    "side": "minecraft:block/terracotta"
+  },
+  "render_type": "solid"
+}

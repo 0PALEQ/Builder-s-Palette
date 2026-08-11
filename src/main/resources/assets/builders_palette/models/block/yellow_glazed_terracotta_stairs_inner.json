@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "minecraft:block/yellow_glazed_terracotta",
+    "bottom": "minecraft:block/yellow_glazed_terracotta",
+    "top": "minecraft:block/yellow_glazed_terracotta",
+    "side": "minecraft:block/yellow_glazed_terracotta"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,6 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {"item": "builders_palette:polished_pink_terracotta"},
+  "result": "builders_palette:polished_pink_terracotta_wall",
+  "count": 1
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/pastel_mint_concrete_bricks_stairs",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:pastel_mint_concrete_bricks_stairs"
+        }
+      ]
+    }
+  ]
+}

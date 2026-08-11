@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_glass_pane_noside",
+  "textures": {
+    "particle": "builders_palette:block/glasspane",
+    "pane": "builders_palette:block/glasspane"
+  },
+  "render_type": "translucent"
+}

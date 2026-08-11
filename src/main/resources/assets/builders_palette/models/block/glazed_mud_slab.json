@@ -1,0 +1,10 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "particle": "builders_palette:block/glazed_mud",
+    "bottom": "builders_palette:block/glazed_mud",
+    "top": "builders_palette:block/glazed_mud",
+    "side": "builders_palette:block/glazed_mud"
+  },
+  "render_type": "solid"
+}

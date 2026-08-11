@@ -1,0 +1,10 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/pastel_lavender_concrete_bricks",
+    "bottom": "builders_palette:block/pastel_lavender_concrete_bricks",
+    "top": "builders_palette:block/pastel_lavender_concrete_bricks",
+    "side": "builders_palette:block/pastel_lavender_concrete_bricks"
+  },
+  "render_type": "solid"
+}

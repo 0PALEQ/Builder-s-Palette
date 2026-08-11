@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/smooth-farmhouse-wood",
+    "bottom": "builders_palette:block/smooth-farmhouse-wood",
+    "top": "builders_palette:block/smooth-farmhouse-wood",
+    "side": "builders_palette:block/smooth-farmhouse-wood"
+  },
+  "render_type": "solid"
+}

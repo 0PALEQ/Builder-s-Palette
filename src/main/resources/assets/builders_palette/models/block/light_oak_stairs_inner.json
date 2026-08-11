@@ -1,0 +1,10 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "particle": "builders_palette:block/ikea_wood",
+    "bottom": "builders_palette:block/ikea_wood",
+    "top": "builders_palette:block/ikea_wood",
+    "side": "builders_palette:block/ikea_wood"
+  },
+  "render_type": "solid"
+}

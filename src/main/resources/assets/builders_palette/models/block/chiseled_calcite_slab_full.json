@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/chiseled_calcite",
+    "bottom": "builders_palette:block/chiseled_calcite",
+    "top": "builders_palette:block/chiseled_calcite",
+    "side": "builders_palette:block/chiseled_calcite"
+  },
+  "render_type": "solid"
+}

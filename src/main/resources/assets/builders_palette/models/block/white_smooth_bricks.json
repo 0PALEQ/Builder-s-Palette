@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/whitesmoothbricks",
+    "particle": "builders_palette:block/whitesmoothbricks"
+  },
+  "render_type": "solid"
+}

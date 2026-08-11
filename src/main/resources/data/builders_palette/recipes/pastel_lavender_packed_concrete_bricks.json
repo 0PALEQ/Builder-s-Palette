@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "builders_palette:pastel_lavender_concrete_bricks"
+    }
+  },
+  "result": {
+    "item": "builders_palette:pastel_lavender_packed_concrete_bricks",
+    "count": 4
+  },
+  "show_notification": true
+}

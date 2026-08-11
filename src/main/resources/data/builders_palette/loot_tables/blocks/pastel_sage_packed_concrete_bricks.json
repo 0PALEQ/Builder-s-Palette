@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "builders_palette:blocks/pastel_sage_packed_concrete_bricks",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "builders_palette:pastel_sage_packed_concrete_bricks"
+        }
+      ]
+    }
+  ]
+}

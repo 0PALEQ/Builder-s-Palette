@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "builders_palette:block/magenta_terracotta_bricks",
+    "bottom": "builders_palette:block/magenta_terracotta_bricks",
+    "top": "builders_palette:block/magenta_terracotta_bricks",
+    "side": "builders_palette:block/magenta_terracotta_bricks"
+  },
+  "render_type": "solid"
+}

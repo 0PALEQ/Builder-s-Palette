@@ -1,0 +1,10 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "particle": "builders_palette:block/white_pavement",
+    "bottom": "builders_palette:block/white_pavement",
+    "top": "builders_palette:block/white_pavement",
+    "side": "builders_palette:block/white_pavement"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "builders_palette:block/maple_leaves",
+    "particle": "builders_palette:block/maple_leaves"
+  }
+}

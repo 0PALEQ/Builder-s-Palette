@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "particle": "builders_palette:block/packed_green_terracotta_bricks",
+    "bottom": "builders_palette:block/packed_green_terracotta_bricks",
+    "top": "builders_palette:block/packed_green_terracotta_bricks",
+    "side": "builders_palette:block/packed_green_terracotta_bricks"
+  }
+}

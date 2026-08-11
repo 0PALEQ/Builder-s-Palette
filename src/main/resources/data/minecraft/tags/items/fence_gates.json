@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "builders_palette:maple_fence_gate",
+    "builders_palette:cedar_fence_gate",
+    "builders_palette:walnut_fence_gate",
+    "builders_palette:olive_fence_gate",
+    "builders_palette:purpleheart_fence_gate"
+  ]
+}
