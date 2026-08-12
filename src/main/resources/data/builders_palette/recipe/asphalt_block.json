@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:black_concrete_powder",
+    "minecraft:gravel",
+    "minecraft:coal"
+  ],
+  "result": {
+    "id": "builders_palette:asphalt_block",
+    "count": 2
+  },
+  "show_notification": true
+}

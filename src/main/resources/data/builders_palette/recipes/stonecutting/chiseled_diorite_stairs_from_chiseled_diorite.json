@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:chiseled_diorite"},
-  "result": "builders_palette:chiseled_diorite_stairs",
-  "count": 1
-}

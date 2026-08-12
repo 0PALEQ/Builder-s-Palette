@@ -1,5 +1,6 @@
 package com.cookiecraftmods.builderspalette.block;
 
+import com.cookiecraftmods.builderspalette.init.RegistryObject;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 
@@ -8,7 +9,8 @@ public final class BuildersPaletteBlockProperties {
 	}
 
 	public static BlockBehaviour.Properties of() {
-		return BlockBehaviour.Properties.of().mapColor(colorFor(callingBlockClassName()));
+		return RegistryObject.blockSettings(BlockBehaviour.Properties.of())
+				.mapColor(colorFor(callingBlockClassName()));
 	}
 
 	private static String callingBlockClassName() {

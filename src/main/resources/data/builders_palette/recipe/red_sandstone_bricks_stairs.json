@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:red_sandstone_bricks"
+  },
+  "result": {
+    "id": "builders_palette:red_sandstone_bricks_stairs",
+    "count": 4
+  }
+}

@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_purple_terracotta"},
-  "result": "builders_palette:polished_purple_terracotta_stairs",
-  "count": 1
-}

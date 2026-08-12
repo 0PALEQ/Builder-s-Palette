@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "builders_palette:polished_magenta_terracotta_slab"
+  },
+  "result": {
+    "id": "builders_palette:chiseled_magenta_terracotta",
+    "count": 1
+  },
+  "show_notification": true
+}

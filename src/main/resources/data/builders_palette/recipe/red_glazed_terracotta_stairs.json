@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:red_glazed_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:red_glazed_terracotta_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

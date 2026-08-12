@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:brown_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:packed_brown_terracotta_bricks",
+    "count": 4
+  }
+}

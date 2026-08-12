@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "builders_palette:polished_yellow_terracotta"},
-  "result": "builders_palette:polished_yellow_terracotta_slab",
-  "count": 2
-}

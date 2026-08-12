@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "redstone",
+  "ingredients": [
+    "builders_palette:light_oak_planks"
+  ],
+  "result": {
+    "id": "builders_palette:light_oak_button",
+    "count": 1
+  }
+}

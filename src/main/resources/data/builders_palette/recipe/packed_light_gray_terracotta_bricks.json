@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:light_gray_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:packed_light_gray_terracotta_bricks",
+    "count": 4
+  }
+}

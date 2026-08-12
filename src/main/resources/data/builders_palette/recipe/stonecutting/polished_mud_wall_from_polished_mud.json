@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:polished_mud",
+  "result": {
+    "id": "builders_palette:polished_mud_wall"
+  },
+  "count": 1
+}

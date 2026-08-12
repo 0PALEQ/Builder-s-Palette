@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:pink_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:pink_terracotta_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

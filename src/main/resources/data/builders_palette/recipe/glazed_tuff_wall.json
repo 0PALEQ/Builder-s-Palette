@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:glazed_tuff"
+  },
+  "result": {
+    "id": "builders_palette:glazed_tuff_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

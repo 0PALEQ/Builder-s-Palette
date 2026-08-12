@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "minecraft:andesite"},
-  "result": "builders_palette:packed_andesite_bricks",
-  "count": 1
-}

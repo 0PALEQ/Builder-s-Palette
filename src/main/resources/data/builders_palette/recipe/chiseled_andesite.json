@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "builders_palette:polished_andesite_slab"
+  },
+  "result": {
+    "id": "builders_palette:chiseled_andesite",
+    "count": 1
+  },
+  "show_notification": true
+}

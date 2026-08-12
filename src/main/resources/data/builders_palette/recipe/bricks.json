@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:brick"
+  },
+  "result": {
+    "id": "builders_palette:bricks",
+    "count": 1
+  },
+  "show_notification": true
+}

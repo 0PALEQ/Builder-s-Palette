@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "builders_palette:pastel_sage_smooth_concrete"
+  },
+  "result": {
+    "id": "builders_palette:pastel_sage_concrete_bricks",
+    "count": 4
+  },
+  "show_notification": true
+}

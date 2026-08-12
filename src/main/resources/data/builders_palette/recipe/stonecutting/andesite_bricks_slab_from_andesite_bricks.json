@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:andesite_bricks",
+  "result": {
+    "id": "builders_palette:andesite_bricks_slab"
+  },
+  "count": 2
+}

@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/dark_gray_smooth_terracotta"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/dark_gray_smooth_terracotta"
+  }
 }

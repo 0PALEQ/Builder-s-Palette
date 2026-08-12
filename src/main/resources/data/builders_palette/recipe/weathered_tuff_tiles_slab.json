@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:weathered_tuff_tiles"
+  },
+  "result": {
+    "id": "builders_palette:weathered_tuff_tiles_slab",
+    "count": 6
+  },
+  "show_notification": true
+}

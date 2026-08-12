@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "builders_palette:black_brick"
+  },
+  "result": {
+    "id": "builders_palette:black_bricks",
+    "count": 1
+  },
+  "show_notification": true
+}

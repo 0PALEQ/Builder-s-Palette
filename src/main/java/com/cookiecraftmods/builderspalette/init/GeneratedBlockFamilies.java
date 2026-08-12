@@ -1,5 +1,7 @@
 package com.cookiecraftmods.builderspalette.init;
 
+import java.util.ArrayList;
+import java.util.List;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -10,9 +12,6 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Compact registrations owned by tools/add_blocks.py.
@@ -50,7 +49,7 @@ public final class GeneratedBlockFamilies {
 
 		for (RegistryObject<Block> block : BLOCKS) {
 			RegistryObject.register(BuiltInRegistries.ITEM, block.getId().getPath(),
-					() -> new BlockItem(block.get(), new Item.Properties()));
+					() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Properties())));
 		}
 	}
 
@@ -67,13 +66,15 @@ public final class GeneratedBlockFamilies {
 
 		if (stairs) {
 			register(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(),
-					BlockBehaviour.Properties.copy(base.get())));
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 		if (slab) {
-			register(name + "_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(base.get())));
+			register(name + "_slab", () -> new SlabBlock(
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 		if (wall) {
-			register(name + "_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(base.get())));
+			register(name + "_wall", () -> new WallBlock(
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 	}
 
@@ -82,7 +83,7 @@ public final class GeneratedBlockFamilies {
 		BlockBehaviour.Properties settings = BlockBehaviour.Properties.of()
 				.sound(sound)
 				.strength(hardness, resistance);
-		return requiresTool ? settings.requiresCorrectToolForDrops() : settings;
+		return RegistryObject.blockSettings(requiresTool ? settings.requiresCorrectToolForDrops() : settings);
 	}
 
 	private static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {

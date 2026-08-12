@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:black_smooth_terracotta",
+  "result": {
+    "id": "builders_palette:black_smooth_terracotta_slab"
+  },
+  "count": 2
+}

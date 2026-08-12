@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/deep_blue_tiles"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/deep_blue_tiles"
+  }
 }

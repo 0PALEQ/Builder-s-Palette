@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:end_stone"
+  },
+  "result": {
+    "id": "builders_palette:end_stone_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

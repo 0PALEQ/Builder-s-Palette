@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:glazed_end_stone"
+  },
+  "result": {
+    "id": "builders_palette:glazed_end_stone_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

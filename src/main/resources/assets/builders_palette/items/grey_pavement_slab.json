@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/grey_pavement_slab"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/grey_pavement_slab"
+  }
 }

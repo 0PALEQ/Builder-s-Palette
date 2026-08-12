@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:green_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:polished_green_terracotta",
+    "count": 4
+  },
+  "show_notification": true
+}

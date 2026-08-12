@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:polished_brown_terracotta",
+  "result": {
+    "id": "builders_palette:polished_brown_terracotta_slab"
+  },
+  "count": 2
+}

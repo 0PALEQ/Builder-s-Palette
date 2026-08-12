@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "builders_palette:maple_wood"
+  ],
+  "result": {
+    "id": "builders_palette:maple_planks",
+    "count": 4
+  }
+}

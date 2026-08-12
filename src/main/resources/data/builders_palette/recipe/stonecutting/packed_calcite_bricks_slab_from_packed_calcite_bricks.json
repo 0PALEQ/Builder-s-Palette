@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:packed_calcite_bricks",
+  "result": {
+    "id": "builders_palette:packed_calcite_bricks_slab"
+  },
+  "count": 2
+}

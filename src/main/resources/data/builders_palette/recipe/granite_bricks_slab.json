@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:granite_bricks"
+  },
+  "result": {
+    "id": "builders_palette:granite_bricks_slab",
+    "count": 6
+  }
+}

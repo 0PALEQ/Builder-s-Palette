@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:chiseled_green_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_green_terracotta_slab"
+  },
+  "count": 2
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:peach_bricks",
+  "result": {
+    "id": "builders_palette:peach_bricks_stairs"
+  },
+  "count": 1
+}

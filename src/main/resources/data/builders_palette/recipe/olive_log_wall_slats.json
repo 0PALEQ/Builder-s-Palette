@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:olive_log"
+  },
+  "result": {
+    "id": "builders_palette:olive_log_wall_slats",
+    "count": 6
+  },
+  "show_notification": true
+}

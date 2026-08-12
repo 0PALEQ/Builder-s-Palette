@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "builders_palette:bricks",
+    "minecraft:brown_dye",
+    "minecraft:white_dye"
+  ],
+  "result": {
+    "id": "builders_palette:light_brown_bricks",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_recolor"
+}

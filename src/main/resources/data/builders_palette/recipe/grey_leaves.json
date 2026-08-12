@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:oak_leaves",
+    "minecraft:gray_dye"
+  ],
+  "result": {
+    "id": "builders_palette:grey_leaves",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_leaves"
+}

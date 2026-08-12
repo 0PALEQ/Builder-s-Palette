@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:light_oak_log"
+  },
+  "result": {
+    "id": "builders_palette:light_oak_log_wall_slats",
+    "count": 6
+  },
+  "show_notification": true
+}

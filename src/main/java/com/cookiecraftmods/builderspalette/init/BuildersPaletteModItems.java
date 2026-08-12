@@ -2,13 +2,11 @@
 package com.cookiecraftmods.builderspalette.init;
 
 import com.cookiecraftmods.builderspalette.init.RegistryObject;
-import net.minecraft.core.registries.BuiltInRegistries;
-
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.BlockItem;
 import java.util.function.Supplier;
-
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import com.cookiecraftmods.builderspalette.item.WhiteBrickItem;
 import com.cookiecraftmods.builderspalette.item.BlackBrickItem;
 public class BuildersPaletteModItems {
@@ -874,6 +872,7 @@ public class BuildersPaletteModItems {
 	public static final RegistryObject<Item> END_STONE_PILLAR = block(BuildersPaletteModBlocks.END_STONE_PILLAR);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
-		return register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+		return register(block.getId().getPath(),
+				() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Properties())));
 	}
 }

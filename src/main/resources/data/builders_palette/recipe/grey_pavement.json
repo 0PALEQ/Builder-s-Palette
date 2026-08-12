@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:gray_concrete"
+  },
+  "result": {
+    "id": "builders_palette:grey_pavement",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:glazed_calcite"
+  },
+  "result": {
+    "id": "builders_palette:glazed_calcite_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

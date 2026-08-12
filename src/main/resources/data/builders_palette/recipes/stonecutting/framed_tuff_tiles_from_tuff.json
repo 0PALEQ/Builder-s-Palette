@@ -1,6 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {"item": "minecraft:tuff"},
-  "result": "builders_palette:framed_tuff_tiles",
-  "count": 1
-}

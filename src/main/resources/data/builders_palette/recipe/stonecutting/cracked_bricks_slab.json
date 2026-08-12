@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:cracked_bricks",
+  "result": {
+    "id": "builders_palette:cracked_bricks_slab"
+  },
+  "count": 2
+}

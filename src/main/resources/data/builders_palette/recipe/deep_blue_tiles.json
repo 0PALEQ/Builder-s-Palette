@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "builders_palette:light_blue_tiles",
+    "minecraft:blue_dye",
+    "minecraft:black_dye"
+  ],
+  "result": {
+    "id": "builders_palette:deep_blue_tiles",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_recolor"
+}

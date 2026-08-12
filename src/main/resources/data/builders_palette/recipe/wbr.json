@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ab"
+  ],
+  "key": {
+    "a": "minecraft:brick",
+    "b": "minecraft:white_dye"
+  },
+  "result": {
+    "id": "builders_palette:white_brick",
+    "count": 1
+  }
+}

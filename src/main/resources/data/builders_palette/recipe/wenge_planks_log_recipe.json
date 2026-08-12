@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "category": "building",
+  "ingredients": [
+    "builders_palette:wenge_log"
+  ],
+  "result": {
+    "id": "builders_palette:wenge_planks",
+    "count": 4
+  }
+}

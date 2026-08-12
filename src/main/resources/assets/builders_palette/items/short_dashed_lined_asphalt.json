@@ -1,6 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/short_dashed_lined_asphalt"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/short_dashed_lined_asphalt"
+  }
 }

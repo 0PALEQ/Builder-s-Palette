@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "category": "building",
+  "pattern": [
+    "aaa"
+  ],
+  "key": {
+    "a": "builders_palette:purpleheart_planks"
+  },
+  "result": {
+    "id": "builders_palette:purpleheart_slab",
+    "count": 6
+  }
+}

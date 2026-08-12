@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "builders_palette:black_n_white_tiles"
-  },
-  "result": "builders_palette:black_n_white_tiles_stairs",
-  "count": 1
-}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:yellow_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:polished_yellow_terracotta",
+    "count": 4
+  },
+  "show_notification": true
+}

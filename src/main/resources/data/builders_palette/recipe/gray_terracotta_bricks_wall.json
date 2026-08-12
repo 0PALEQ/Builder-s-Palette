@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:gray_terracotta_bricks"
+  },
+  "result": {
+    "id": "builders_palette:gray_terracotta_bricks_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

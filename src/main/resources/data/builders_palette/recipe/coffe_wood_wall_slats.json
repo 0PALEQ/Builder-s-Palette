@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:dark_oak_planks"
+  },
+  "result": {
+    "id": "builders_palette:coffe_wood_wall_slats",
+    "count": 6
+  },
+  "show_notification": true
+}

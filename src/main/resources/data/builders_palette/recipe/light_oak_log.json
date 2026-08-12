@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "minecraft:oak_log",
+    "minecraft:white_dye"
+  ],
+  "result": {
+    "id": "builders_palette:light_oak_log",
+    "count": 1
+  },
+  "show_notification": true,
+  "group": "builders_palette_logs"
+}

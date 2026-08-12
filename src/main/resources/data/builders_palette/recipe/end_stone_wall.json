@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "minecraft:end_stone"
+  },
+  "result": {
+    "id": "builders_palette:end_stone_wall",
+    "count": 6
+  },
+  "show_notification": true
+}

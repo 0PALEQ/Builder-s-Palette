@@ -1,7 +1,6 @@
 {
-    "model":  {
-                  "type":  "minecraft:model",
-                  "model":  "builders_palette:item/cedar_fence"
-              }
+  "model": {
+    "type": "minecraft:model",
+    "model": "builders_palette:item/cedar_fence"
+  }
 }
-

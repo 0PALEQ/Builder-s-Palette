@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:pastel_aqua_concrete_pillar"
+  },
+  "result": {
+    "id": "builders_palette:pastel_aqua_concrete_pillar_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

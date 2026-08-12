@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:chiseled_pink_terracotta",
+  "result": {
+    "id": "builders_palette:chiseled_pink_terracotta_stairs"
+  },
+  "count": 1
+}

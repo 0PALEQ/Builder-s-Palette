@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "builders_palette:polished_calcite_slab"
+  },
+  "result": {
+    "id": "builders_palette:chiseled_calcite",
+    "count": 1
+  },
+  "show_notification": true
+}

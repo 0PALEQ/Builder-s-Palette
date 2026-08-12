@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:black_tiles"
+  },
+  "result": {
+    "id": "builders_palette:black_tiles_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}

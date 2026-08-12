@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": "minecraft:cyan_terracotta"
+  },
+  "result": {
+    "id": "builders_palette:cyan_terracotta_pillar",
+    "count": 2
+  },
+  "show_notification": true
+}

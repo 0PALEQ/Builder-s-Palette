@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "builders_palette:black_brick",
+    "b": "minecraft:white_concrete_powder"
+  },
+  "result": {
+    "id": "builders_palette:black_3d_bricks",
+    "count": 1
+  }
+}

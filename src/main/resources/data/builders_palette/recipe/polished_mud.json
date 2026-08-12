@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": "minecraft:mud"
+  },
+  "result": {
+    "id": "builders_palette:polished_mud",
+    "count": 4
+  },
+  "show_notification": true
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "builders_palette:polished_light_gray_terracotta",
+  "result": {
+    "id": "builders_palette:polished_light_gray_terracotta_stairs"
+  },
+  "count": 1
+}

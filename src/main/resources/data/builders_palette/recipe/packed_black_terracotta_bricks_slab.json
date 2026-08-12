@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:packed_black_terracotta_bricks"
+  },
+  "result": {
+    "id": "builders_palette:packed_black_terracotta_bricks_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": "builders_palette:light_gray_bricks"
+  },
+  "result": {
+    "id": "builders_palette:light_gray_bricks_stairs",
+    "count": 4
+  },
+  "show_notification": true
+}
