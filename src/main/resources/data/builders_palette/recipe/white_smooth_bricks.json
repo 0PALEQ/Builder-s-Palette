@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "builders_palette:white_bricks",
   "result": {
     "id": "builders_palette:white_smooth_bricks"

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:pink_terracotta",
   "result": {
     "id": "builders_palette:pink_smooth_terracotta"

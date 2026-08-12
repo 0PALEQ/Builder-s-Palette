@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:sandstone",
   "result": {
     "id": "builders_palette:glazed_sandstone"

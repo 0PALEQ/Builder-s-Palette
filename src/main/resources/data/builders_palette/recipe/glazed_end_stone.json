@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:end_stone",
   "result": {
     "id": "builders_palette:glazed_end_stone"

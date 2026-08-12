@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:red_terracotta",
   "result": {
     "id": "builders_palette:red_smooth_terracotta"

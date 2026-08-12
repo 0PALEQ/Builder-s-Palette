@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "builders_palette:black_bricks",
   "result": {
     "id": "builders_palette:black_smooth_bricks"

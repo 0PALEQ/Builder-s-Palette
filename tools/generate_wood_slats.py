@@ -270,9 +270,9 @@ def main() -> int:
 
     tabs_path = JAVA / "BuildersPaletteModTabs.java"
     tabs = tabs_path.read_text(encoding="utf-8")
-    tab_anchor = "\t\t\t\ttabData.add(BuildersPaletteModBlocks.COFFE_WOOD_WALL_SLATS.get().asItem());"
+    tab_anchor = "\t\t\t\ttabData.accept(BuildersPaletteModBlocks.COFFE_WOOD_WALL_SLATS.get().asItem());"
     tab_lines = [
-        f"tabData.add(BuildersPaletteModBlocks.{constant(block_id)}.get().asItem());"
+        f"tabData.accept(BuildersPaletteModBlocks.{constant(block_id)}.get().asItem());"
         for block_id, _, _, _ in generated_variants
     ]
     text_outputs[tabs_path] = generated_section(tabs, tab_anchor, tab_lines)

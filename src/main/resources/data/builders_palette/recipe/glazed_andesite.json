@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:andesite",
   "result": {
     "id": "builders_palette:glazed_andesite"

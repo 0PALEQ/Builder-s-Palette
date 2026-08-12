@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:diorite",
   "result": {
     "id": "builders_palette:glazed_diorite"

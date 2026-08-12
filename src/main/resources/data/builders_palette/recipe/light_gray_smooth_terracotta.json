@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "category": "building",
+  "category": "blocks",
   "ingredient": "minecraft:light_gray_terracotta",
   "result": {
     "id": "builders_palette:light_gray_smooth_terracotta"
