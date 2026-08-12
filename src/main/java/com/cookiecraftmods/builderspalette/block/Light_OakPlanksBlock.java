@@ -1,23 +1,22 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.Block;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 public class Light_OakPlanksBlock extends Block {
 	public Light_OakPlanksBlock() {
-		super(BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f, 3f));
+		super(BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f));
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
 	}
-	public int getFlammability(BlockState state, BlockView world, BlockPos pos, Direction face) {
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
 	}
 }

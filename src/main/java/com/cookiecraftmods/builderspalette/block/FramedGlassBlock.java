@@ -1,24 +1,12 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.fluid.FluidState;
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.PaneBlock;
-import net.minecraft.world.BlockView;
-import net.minecraft.world.BlockRenderView;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.level.block.IronBarsBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
-public class FramedGlassBlock extends PaneBlock {
+public class FramedGlassBlock extends IronBarsBlock {
 	public FramedGlassBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.GLASS).strength(1f, 10f).nonOpaque().solidBlock((bs, br, bp) -> false));
-	}
-	public boolean shouldDisplayFluidOverlay(BlockState state, BlockRenderView world, BlockPos pos, FluidState fluidstate) {
-		return true;
-	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
-		return 0;
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GLASS).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 }

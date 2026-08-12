@@ -1,30 +1,29 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.Blocks;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
-public class GreyStairsBlock extends StairsBlock {
+public class GreyStairsBlock extends StairBlock {
 	public GreyStairsBlock() {
-		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(3f, 2f));
+		super(Blocks.AIR.defaultBlockState(), BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(3f, 2f));
 	}
 	public float getExplosionResistance() {
 		return 2f;
 	}
-	public boolean hasRandomTicks(BlockState state) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}
-	public int getFlammability(BlockState state, BlockView world, BlockPos pos, Direction face) {
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
 	}
 }

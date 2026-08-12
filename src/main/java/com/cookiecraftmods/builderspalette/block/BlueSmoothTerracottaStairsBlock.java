@@ -1,26 +1,25 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.Blocks;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
-public class BlueSmoothTerracottaStairsBlock extends StairsBlock {
+public class BlueSmoothTerracottaStairsBlock extends StairBlock {
 	public BlueSmoothTerracottaStairsBlock() {
-		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f));
+		super(Blocks.AIR.defaultBlockState(), BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f));
 	}
 	public float getExplosionResistance() {
 		return 10f;
 	}
-	public boolean hasRandomTicks(BlockState state) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}
 }

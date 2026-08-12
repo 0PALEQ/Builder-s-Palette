@@ -1,14 +1,13 @@
 package com.cookiecraftmods.builderspalette.init;
 
 import com.cookiecraftmods.builderspalette.BuildersPaletteMod;
-import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
-
 import java.util.function.Supplier;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class RegistryObject<T> {
 	private static final ThreadLocal<Identifier> ACTIVE_ID = new ThreadLocal<>();
@@ -21,7 +20,7 @@ public final class RegistryObject<T> {
 	}
 
 	public static <T> RegistryObject<T> register(Registry<? super T> registry, String name, Supplier<? extends T> supplier) {
-		Identifier id = Identifier.of(BuildersPaletteMod.MODID, name);
+		Identifier id = Identifier.fromNamespaceAndPath(BuildersPaletteMod.MODID, name);
 		if (ACTIVE_ID.get() != null) {
 			throw new IllegalStateException("Nested registry construction is not supported");
 		}
@@ -36,16 +35,16 @@ public final class RegistryObject<T> {
 		return new RegistryObject<>(id, value);
 	}
 
-	public static AbstractBlock.Settings blockSettings(AbstractBlock.Settings settings) {
-		return settings.registryKey(RegistryKey.of(RegistryKeys.BLOCK, activeId()));
+	public static BlockBehaviour.Properties blockSettings(BlockBehaviour.Properties settings) {
+		return settings.setId(ResourceKey.create(Registries.BLOCK, activeId()));
 	}
 
-	public static Item.Settings itemSettings(Item.Settings settings) {
-		return settings.registryKey(RegistryKey.of(RegistryKeys.ITEM, activeId()));
+	public static Item.Properties itemSettings(Item.Properties settings) {
+		return settings.setId(ResourceKey.create(Registries.ITEM, activeId()));
 	}
 
-	public static Item.Settings blockItemSettings(Item.Settings settings) {
-		return itemSettings(settings).useBlockPrefixedTranslationKey();
+	public static Item.Properties blockItemSettings(Item.Properties settings) {
+		return itemSettings(settings).useBlockDescriptionPrefix();
 	}
 
 	private static Identifier activeId() {

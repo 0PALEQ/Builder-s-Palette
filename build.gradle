@@ -1,36 +1,7 @@
-buildscript {
-    repositories {
-        maven {
-            name = 'Fabric'
-            url = 'https://maven.fabricmc.net/'
-        }
-        gradlePluginPortal()
-        mavenCentral()
-    }
-    configurations.classpath {
-        resolutionStrategy {
-            force 'com.google.code.gson:gson:2.13.2'
-            eachDependency { details ->
-                if (details.requested.group == 'com.google.code.gson' && details.requested.name == 'gson') {
-                    details.useVersion '2.13.2'
-                    details.because 'Loom record metadata parsing fails with Gson 2.9.1 on Java 21'
-                }
-            }
-        }
-    }
-    dependencies {
-        classpath 'com.google.code.gson:gson:2.13.2'
-        classpath("net.fabricmc:fabric-loom:${loom_version}") {
-            exclude group: 'com.google.code.gson', module: 'gson'
-        }
-    }
-}
-
 plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
     id 'maven-publish'
 }
-
-apply plugin: 'fabric-loom'
 
 version = project.mod_version
 group = project.maven_group
@@ -45,9 +16,8 @@ repositories {
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
-    mappings "net.fabricmc:yarn:${yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
 }
 
 processResources {
@@ -59,13 +29,15 @@ processResources {
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    toolchain.languageVersion = JavaLanguageVersion.of(25)
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
     withSourcesJar()
 }
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
-    options.release = 21
+    options.release = 25
 }
 
 tasks.withType(Jar).configureEach {

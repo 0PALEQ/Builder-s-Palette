@@ -1,12 +1,11 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.SlabBlock;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.SoundType;
 
 public class BlackNWhiteTilesSlabBlock extends SlabBlock {
 	public BlackNWhiteTilesSlabBlock() {
-		super(BuildersPaletteBlockProperties.of().sounds(BlockSoundGroup.STONE).strength(1f, 10f));
+		super(BuildersPaletteBlockProperties.of().sound(SoundType.STONE).strength(1f, 10f));
 	}
 }

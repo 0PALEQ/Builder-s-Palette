@@ -1,25 +1,24 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.Blocks;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class CalciteStairsBlock extends StairsBlock {
+public class CalciteStairsBlock extends StairBlock {
 	public CalciteStairsBlock() {
-		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().sounds(BlockSoundGroup.CALCITE).strength(1f, 10f).dynamicBounds());
+		super(Blocks.AIR.defaultBlockState(), BuildersPaletteBlockProperties.of().sound(SoundType.CALCITE).strength(1f, 10f).dynamicShape());
 	}
 	public float getExplosionResistance() {
 		return 10f;
 	}
-	public boolean hasRandomTicks(BlockState state) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}
 }

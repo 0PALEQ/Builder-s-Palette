@@ -1,18 +1,17 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class TerracottaWallBlock extends WallBlock {
 	public TerracottaWallBlock() {
-		super(BuildersPaletteBlockProperties.of().sounds(BlockSoundGroup.STONE).strength(1f, 10f).dynamicBounds().solid());
+		super(BuildersPaletteBlockProperties.of().sound(SoundType.STONE).strength(1f, 10f).dynamicShape().forceSolidOn());
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}
 }

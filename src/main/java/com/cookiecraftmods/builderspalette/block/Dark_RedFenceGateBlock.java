@@ -1,24 +1,23 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.WoodType;
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.FenceGateBlock;
-import net.minecraft.world.BlockView;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.FenceGateBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 
 public class Dark_RedFenceGateBlock extends FenceGateBlock {
 	public Dark_RedFenceGateBlock() {
-		super(WoodType.OAK, BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f, 3f).solid());
+		super(WoodType.OAK, BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f, 3f).forceSolidOn());
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
 	}
-	public int getFlammability(BlockState state, BlockView world, BlockPos pos, Direction face) {
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
 	}
 }

@@ -1,20 +1,19 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.block.Blocks;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class BlackTilesStairsBlock extends StairsBlock {
+public class BlackTilesStairsBlock extends StairBlock {
 	public BlackTilesStairsBlock() {
-		super(Blocks.AIR.getDefaultState(), BuildersPaletteBlockProperties.of().sounds(BlockSoundGroup.STONE).strength(1f, 10f));
+		super(Blocks.AIR.defaultBlockState(), BuildersPaletteBlockProperties.of().sound(SoundType.STONE).strength(1f, 10f));
 	}
 	public float getExplosionResistance() {
 		return 10f;
 	}
-	public boolean hasRandomTicks(BlockState state) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
 }

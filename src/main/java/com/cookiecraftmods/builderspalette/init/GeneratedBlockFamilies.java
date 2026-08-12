@@ -1,18 +1,17 @@
 package com.cookiecraftmods.builderspalette.init;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.SlabBlock;
-import net.minecraft.block.StairsBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.registry.Registries;
-import net.minecraft.sound.BlockSoundGroup;
-
 import java.util.ArrayList;
 import java.util.List;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 /**
  * Compact registrations owned by tools/add_blocks.py.
@@ -49,46 +48,46 @@ public final class GeneratedBlockFamilies {
 		itemsRegistered = true;
 
 		for (RegistryObject<Block> block : BLOCKS) {
-			RegistryObject.register(Registries.ITEM, block.getId().getPath(),
-					() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Settings())));
+			RegistryObject.register(BuiltInRegistries.ITEM, block.getId().getPath(),
+					() -> new BlockItem(block.get(), RegistryObject.blockItemSettings(new Item.Properties())));
 		}
 	}
 
-	public static void addToTab(ItemGroup.Entries entries) {
+	public static void addToTab(CreativeModeTab.Output entries) {
 		for (RegistryObject<Block> block : BLOCKS) {
-			entries.add(block.get().asItem());
+			entries.accept(block.get().asItem());
 		}
 	}
 
 	private static void registerFamily(String name, float hardness, float resistance,
-			BlockSoundGroup sound, boolean requiresTool, boolean stairs, boolean slab, boolean wall) {
+			SoundType sound, boolean requiresTool, boolean stairs, boolean slab, boolean wall) {
 		RegistryObject<Block> base = register(name,
 				() -> new Block(settings(hardness, resistance, sound, requiresTool)));
 
 		if (stairs) {
-			register(name + "_stairs", () -> new StairsBlock(base.get().getDefaultState(),
-					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+			register(name + "_stairs", () -> new StairBlock(base.get().defaultBlockState(),
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 		if (slab) {
 			register(name + "_slab", () -> new SlabBlock(
-					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 		if (wall) {
 			register(name + "_wall", () -> new WallBlock(
-					RegistryObject.blockSettings(AbstractBlock.Settings.copy(base.get()))));
+					RegistryObject.blockSettings(BlockBehaviour.Properties.ofFullCopy(base.get()))));
 		}
 	}
 
-	private static AbstractBlock.Settings settings(float hardness, float resistance,
-			BlockSoundGroup sound, boolean requiresTool) {
-		AbstractBlock.Settings settings = AbstractBlock.Settings.create()
-				.sounds(sound)
+	private static BlockBehaviour.Properties settings(float hardness, float resistance,
+			SoundType sound, boolean requiresTool) {
+		BlockBehaviour.Properties settings = BlockBehaviour.Properties.of()
+				.sound(sound)
 				.strength(hardness, resistance);
-		return RegistryObject.blockSettings(requiresTool ? settings.requiresTool() : settings);
+		return RegistryObject.blockSettings(requiresTool ? settings.requiresCorrectToolForDrops() : settings);
 	}
 
 	private static RegistryObject<Block> register(String name, java.util.function.Supplier<? extends Block> supplier) {
-		RegistryObject<Block> block = RegistryObject.register(Registries.BLOCK, name, supplier);
+		RegistryObject<Block> block = RegistryObject.register(BuiltInRegistries.BLOCK, name, supplier);
 		BLOCKS.add(block);
 		return block;
 	}

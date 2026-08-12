@@ -1,48 +1,47 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.property.Properties;
-import net.minecraft.state.StateManager;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.block.Block;
-import net.minecraft.world.BlockView;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 public class WengeLogBlock extends Block {
-	public static final EnumProperty<Direction.Axis> AXIS = Properties.AXIS;
+	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public WengeLogBlock() {
-		super(BuildersPaletteBlockProperties.of().burnable().instrument(NoteBlockInstrument.BASS).sounds(BlockSoundGroup.WOOD).strength(2f));
-		this.setDefaultState(this.getDefaultState().with(AXIS, Direction.Axis.Y));
+		super(BuildersPaletteBlockProperties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).sound(SoundType.WOOD).strength(2f));
+		this.registerDefaultState(this.defaultBlockState().setValue(AXIS, Direction.Axis.Y));
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
 	}
-	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-		super.appendProperties(builder);
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(AXIS);
 	}
-	public BlockState getPlacementState(ItemPlacementContext context) {
-		return super.getPlacementState(context).with(AXIS, context.getSide().getAxis());
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return super.getStateForPlacement(context).setValue(AXIS, context.getClickedFace().getAxis());
 	}
-	public BlockState rotate(BlockState state, BlockRotation rot) {
-		if (rot == BlockRotation.CLOCKWISE_90 || rot == BlockRotation.COUNTERCLOCKWISE_90) {
-			if (state.get(AXIS) == Direction.Axis.X) {
-				return state.with(AXIS, Direction.Axis.Z);
-			} else if (state.get(AXIS) == Direction.Axis.Z) {
-				return state.with(AXIS, Direction.Axis.X);
+	public BlockState rotate(BlockState state, Rotation rot) {
+		if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
+			if (state.getValue(AXIS) == Direction.Axis.X) {
+				return state.setValue(AXIS, Direction.Axis.Z);
+			} else if (state.getValue(AXIS) == Direction.Axis.Z) {
+				return state.setValue(AXIS, Direction.Axis.X);
 			}
 		}
 		return state;
 	}
-	public int getFlammability(BlockState state, BlockView world, BlockPos pos, Direction face) {
+	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
 	}
 }

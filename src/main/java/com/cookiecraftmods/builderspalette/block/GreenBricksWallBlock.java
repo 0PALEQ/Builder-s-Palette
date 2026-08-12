@@ -1,12 +1,11 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.WallBlock;
-import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.WallBlock;
 
 public class GreenBricksWallBlock extends WallBlock {
 	public GreenBricksWallBlock() {
-		super(BuildersPaletteBlockProperties.of().sounds(BlockSoundGroup.STONE).strength(1f, 10f).solid());
+		super(BuildersPaletteBlockProperties.of().sound(SoundType.STONE).strength(1f, 10f).forceSolidOn());
 	}
 }

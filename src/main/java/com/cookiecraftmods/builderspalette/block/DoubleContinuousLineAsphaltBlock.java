@@ -1,44 +1,43 @@
 
 package com.cookiecraftmods.builderspalette.block;
 
-import net.minecraft.block.enums.NoteBlockInstrument;
-import net.minecraft.state.property.EnumProperty;
-import net.minecraft.state.StateManager;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.sound.BlockSoundGroup;
-import net.minecraft.util.BlockRotation;
-import net.minecraft.util.BlockMirror;
-import net.minecraft.block.HorizontalFacingBlock;
-import net.minecraft.block.Block;
-import net.minecraft.world.BlockView;
-import net.minecraft.item.ItemPlacementContext;
-import net.minecraft.util.math.Direction;
-import net.minecraft.util.math.BlockPos;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 
 public class DoubleContinuousLineAsphaltBlock extends Block {
-	public static final EnumProperty<Direction> FACING = HorizontalFacingBlock.FACING;
+	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
 
 	public DoubleContinuousLineAsphaltBlock() {
-		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sounds(BlockSoundGroup.STONE).strength(1f, 10f));
-		this.setDefaultState(this.getDefaultState().with(FACING, Direction.NORTH));
+		super(BuildersPaletteBlockProperties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1f, 10f));
+		this.registerDefaultState(this.defaultBlockState().setValue(FACING, Direction.NORTH));
 	}
-	public int getOpacity(BlockState state, BlockView worldIn, BlockPos pos) {
+	public int getOpacity(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 15;
 	}
-	protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-		super.appendProperties(builder);
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(FACING);
 	}
-	public BlockState getPlacementState(ItemPlacementContext context) {
-		return super.getPlacementState(context).with(FACING, context.getHorizontalPlayerFacing().getOpposite());
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return super.getStateForPlacement(context).setValue(FACING, context.getHorizontalDirection().getOpposite());
 	}
 
-	public BlockState rotate(BlockState state, BlockRotation rot) {
-		return state.with(FACING, rot.rotate(state.get(FACING)));
+	public BlockState rotate(BlockState state, Rotation rot) {
+		return state.setValue(FACING, rot.rotate(state.getValue(FACING)));
 	}
 
-	public BlockState mirror(BlockState state, BlockMirror mirrorIn) {
-		return state.rotate(mirrorIn.getRotation(state.get(FACING)));
+	public BlockState mirror(BlockState state, Mirror mirrorIn) {
+		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
 	}
 }
